@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacto | Horizonte Empresarial</title>
-    </head>
-    <body>
-        <header>
-            <!-- Añadir width y height de la imagen -->
-            <a href="../index.html"> <figure><img src="../assets/imagenes/logoHEb1.svg" alt="Logo Horizonte Empresarial" /></figure> </a>
-            <nav>
-                <ul>
-                    <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
-                    <li><a href="servicios.html">SERVICIOS</a></li>
-                    <li><a href="clientes.html">CLIENTES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h2>Estamos aquí para ayudarte</h2>
 
-            </section>
-            <section>
-                <h2>¿Qué necesitas?</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Horizonte Empresarial</title>
+</head>
 
-                <form name="Contacto" action="" method="post" enctype="multipart/form-data">
-                    <fieldset>
-                        <label for="txName">Nombre </label>
-                        <input id="txName" type="text" name="nombre" placeholder="Escribe aquí tu nombre..."/>
-
-                        <label for="txMail">Correo electrónico </label>
-                        <input id="txMail" type="text" name="correo" placeholder="Escribe aquí tu e-mail..."/>
-                        
-                        <label for="taMsj">Mensaje</label>
-                        <textarea id="taMsj" name="mensaje" rows="4" cols="50" placeholder="Escribe aquí tu mensaje..."></textarea>
-                        
-                        <input type="file" name="arch1" size="50" value="Adjuntar archivo" />
-                        <input type="submit" name="env1" value="Enviar" />
-                    </fieldset>
-                </form>
-
-            </section>
-        </main>
-        <footer>
-            <!-- Añadir width y height de la imagen -->
-            <figure><img src="../assets/imagenes/logoHEb2.svg" alt="Logo Horizonte Empresarial"/></figure>
-            <p> &copy; 2024 Horizonte Empresarial S.L. Todos los derechos reservados </p>
+<body>
+    <header>
+        <!-- Añadir width y height de la imagen -->
+        <a href="../index.html">
+            <figure><img src="../assets/imagenes/logoHEb1.svg" alt="Logo Horizonte Empresarial" /></figure>
+        </a>
+        <nav>
             <ul>
-                <!-- Añadir enlaces a otras paginas -->
-                <li><a href="#">Aviso Legal</a></li>
-                <li><a href="#">Política de cookies</a></li>
-                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="clientes.html">CLIENTES</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="blog.html">BLOG</a></li>
             </ul>
-        </footer>
-    </body>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Estamos aquí para ayudarte</h2>
+            <section>
+                <figure><img src="../assets/imagenes/mapa_contacto.png" alt="Mapa"/></figure>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <figure><img src="../assets/imagenes/icono_ubicacion.png" alt="Icono ubicación" /></figure>
+                        <p>Oficina</br>Rúa do Hórreo</br>17003 - A Coruña</p>
+                    </li>
+                    <li>
+                        <figure><img src="../assets/imagenes/icono_reloj.png" alt="Icono reloj" /></figure>
+                        <p>Lunes a jueves de 8 a 16 h</br>Viernes de 8 a 14 h</p>
+                    </li>
+                    <li>
+                        <figure><img src="../assets/imagenes/icono_mail.png" alt="Icono sobre" /></figure>
+                        <p>infor@he.com</p>
+                    </li>
+                    <li>
+                        <figure><img src="../assets/imagenes/icono_tlf.png" alt="Icono teléfono" /></figure>
+                        <p>Teléfono: 981 562 408</br>WhatsApp: 620 315 709</p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>¿Qué necesitas?</h2>
+
+            <form name="Contacto" action="" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <label for="txName">Nombre </label>
+                    <input id="txName" type="text" name="nombre" placeholder="Escribe aquí tu nombre..." />
+
+                    <label for="txMail">Correo electrónico </label>
+                    <input id="txMail" type="text" name="correo" placeholder="Escribe aquí tu e-mail..." />
+
+                    <label for="taMsj">Mensaje</label>
+                    <textarea id="taMsj" name="mensaje" rows="4" cols="50"
+                        placeholder="Escribe aquí tu mensaje..."></textarea>
+
+                    <input type="file" name="arch1" size="50" value="Adjuntar archivo" />
+                    <input type="submit" name="env1" value="Enviar" />
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <!-- Añadir width y height de la imagen -->
+        <figure><img src="../assets/imagenes/logoHEb2.svg" alt="Logo Horizonte Empresarial" /></figure>
+        <p> &copy; 2024 Horizonte Empresarial S.L. Todos los derechos reservados </p>
+        <ul>
+            <!-- Añadir enlaces a otras paginas -->
+            <li><a href="#">Aviso Legal</a></li>
+            <li><a href="#">Política de cookies</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+        </ul>
+    </footer>
+</body>
+
 </html>
