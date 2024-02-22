@@ -27,6 +27,10 @@ button {
 
 }
 
+.menu{
+    margin-right: 40px;
+}
+
 .menu ul {
     list-style: none;
     margin: 0;
@@ -36,9 +40,6 @@ button {
 
 .menu li {
     margin-right: 30px;
-    padding: 10px;
-    font-size: 100%;
-    transition: transform 0.2s;
 }
 
 .menu a {
@@ -48,9 +49,8 @@ button {
 }
 
 .menu a:hover {
-    color:whitesmoke;
-    font-size: 110%;
-    transform: scale(1.1);
+    color:darkgray;
+    text-decoration: underline;
 }
 
 ul,
@@ -71,6 +71,7 @@ main {
 body {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 header {
@@ -79,7 +80,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    width: 100%;
+
+    height: 70px;
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
