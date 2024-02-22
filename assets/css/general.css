@@ -1,0 +1,43 @@
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 240%;
+}
+
+h2{
+    font-family: Calibri, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    font-size: 180%;
+}
+
+h3{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+}
+
+button{
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 14px;
+    
+}
+
+ul, li{
+    display: inline;
+    list-style: none;
+    position: relative;
+}
+
+main{
+    background-image: url(../imagenes/fondo_horizonte.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: Verdana, sans-serif;
+}
+
