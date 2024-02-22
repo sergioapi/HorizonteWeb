@@ -1,11 +1,11 @@
-h1{
-    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: 240%;
 }
 
-h2{
+h2 {
     font-family: Calibri, sans-serif;
     font-weight: lighter;
     font-style: italic;
@@ -13,27 +13,54 @@ h2{
     font-size: 180%;
 }
 
-h3{
+h3 {
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: 120%;
 }
 
-button{
+button {
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', sans-serif;
     font-size: 14px;
-    
+
 }
 
-ul, li{
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 30px;
+    padding: 10px;
+    font-size: 100%;
+    transition: transform 0.2s;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color:whitesmoke;
+    font-size: 110%;
+    transform: scale(1.1);
+}
+
+ul,
+li {
     display: inline;
     list-style: none;
     position: relative;
 }
 
-main{
+main {
     background-image: url(../imagenes/fondo_horizonte.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -41,3 +68,18 @@ main{
     font-family: Verdana, sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: chocolate;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
