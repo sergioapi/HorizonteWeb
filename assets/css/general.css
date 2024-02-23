@@ -27,7 +27,55 @@ button {
 
 }
 
-.menu{
+ul,
+li {
+    display: inline;
+    list-style: none;
+}
+
+main {
+    background-image: url(../imagenes/fondo_horizonte.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    background-color: chocolate;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    background-color: orange;
+    color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+}
+
+.footer-content{
+margin-right: 35%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.menu {
     margin-right: 40px;
 }
 
@@ -49,40 +97,6 @@ button {
 }
 
 .menu a:hover {
-    color:darkgray;
+    color: darkgray;
     text-decoration: underline;
-}
-
-ul,
-li {
-    display: inline;
-    list-style: none;
-    position: relative;
-}
-
-main {
-    background-image: url(../imagenes/fondo_horizonte.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-
-    font-family: Verdana, sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-header {
-    background-color: chocolate;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 70px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
