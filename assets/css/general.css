@@ -27,10 +27,15 @@ button {
 
 }
 
-ul,
-li {
-    display: inline;
+ul {
     list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0; /* Elimina el margen de la lista para evitar espacios adicionales */
+}
+
+ul li {
+    margin-right: 10px;
 }
 
 main {
@@ -39,6 +44,11 @@ main {
     background-position: center;
 
     font-family: Verdana, sans-serif;
+
+    flex-grow: 1; /* Esto permite que el elemento se expanda y ocupe todo el espacio disponible */
+    min-height: 100vh; /* Establece una altura mínima del 100% del viewport height */
+    display: flex;
+    flex-direction: column; 
 }
 
 header {
@@ -58,14 +68,24 @@ footer {
     color: black;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    height: 100px;
+    min-height: 80px;
 }
 
-.footer-content{
-margin-right: 35%;
+.footer-logo {
+    margin-right: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos a la derecha del contenedor */
+}
+
+.footer-content p {
+    margin: 0; /* Elimina el margen del párrafo para evitar espacios adicionales */
 }
 
 body {
