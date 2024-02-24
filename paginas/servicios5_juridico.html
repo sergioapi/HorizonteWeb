@@ -30,7 +30,7 @@
                 <li>
                     <h3>Mercantil</h3>
                     <!-- Añadir width y height de la imagen -->
-                    <figure><img src="../assets/imagenes/icono_laboral.png" alt="Icono de Asesoría Laboral"></figure>
+                    <figure><img src="../assets/imagenes/icono_mercantil.png" alt="Icono de Asesoría Mercantil"></figure>
                 </li>
                 <li>
                     <h3>Jurídico</h3>
@@ -42,7 +42,7 @@
                 </li>
                 <li>
                     <h3>Laboral</h3><!-- Añadir width y height de la imagen -->
-                    <figure><img src="../assets/imagenes/icono_contable.png" alt="Icono de Asesoría Contable"></figure>
+                    <figure><img src="../assets/imagenes/icono_laboral.png" alt="Icono de Asesoría Laboral"></figure>
                 </li>
                 <li>
                     <a href="./servicios6_laboral.html"> <figure><img src="../assets/imagenes/flecha_derecha2.png" alt="Flecha Derecha"></figure> </a>
@@ -51,7 +51,49 @@
         </section>
         <section>
             <h1>¿Quieres calcular tu presupuesto?</h1>
-            <a href=""><button>ADELANTE</button></a>
+            <a href="#calculadora"><button>ADELANTE</button></a>
+        </section>
+        <section id="calculadora">
+            <h2> ¡Te ayudamos!</h2>
+            <form>
+                <fieldset>
+                    <legend>Servicios requeridos</legend>
+                    <input type="checkbox"> Asesoría Fiscal<br/>
+                    <input type="checkbox"> Asesoría Financiera<br/>
+                    <input type="checkbox"> Asesoría Contable<br/>
+                    <input type="checkbox"> Asesoría Laboral<br/>
+                    <input type="checkbox"> Otros servicios
+                </fieldset>
+                <fieldset>
+                    <legend>Localización</legend>
+                    <input type="text" list="ciudades" name="txt_loc" placeholder="Introduzca su ciudad...">
+                    <datalist id="ciudades">
+                        <option value="A Coruña"></option>
+                        <option value="Ferrol"></option>
+                        <option value="Santiago de Compostela"></option>
+                        <option value="Pontevedra"></option>
+                        <option value="Vigo"></option>
+                        <option value="Lugo"></option>
+                        <option value="Ourense"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend>Tipo de cliente</legend>
+                    <select name="lista_tipo_cliente" size="1">
+                        <option value="" selected disabled>Seleccione una opción...</option>
+                        <option value= "empresa"> Empresa </option>
+                        <option value= "autonomo"> Autónomo </option>
+                        <option value= "particular"> Particular </option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Frecuencia de los servicios</legend>
+                    <input type= "radio" name= "mensual"> Mensual <br/>
+                    <input type= "radio" name= "trimestral"> Trimestral <br/>
+                    <input type= "radio" name= "anual"> Anual <br/>
+                </fieldset>
+                <input type= "submit" name= "enviar_form" value="Enviar">
+            </form>
         </section>
         </main>
         <footer>
