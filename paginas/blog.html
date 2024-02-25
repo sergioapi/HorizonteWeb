@@ -21,7 +21,52 @@
             </nav>
         </header>
         <main>
+            <section>
+                <figure><img src="../assets/imagenes/" alt="Imagen de fondo" /></figure>
+            </section>
+            <section>
+                <form>
+                    <fieldset>
+                        <legend> Buscar publicación </legend>
+                            <input type="text" size="100" name="txt_nombre_pub" placeholder="Busca por título y/o área geográfica">
 
+                            <select name="lista_tipo_servicio" size="1">
+                                <option value="" selected disabled>Seleccione un servicio</option>
+                                <option value= "laboral"> Asesoría Laboral </option>
+                                <option value= "fiscal"> Asesoría Fiscal </option>
+                                <option value= "contable"> Asesoría Contable </option>
+                                <option value= "mercantil"> Asesoría Mercantil </option>
+                                <option value= "juridica"> Asesoría Jurídica </option>
+                                <option value= "financiera"> Asesoría Financiera </option>
+                            </select>
+
+                            <label> Desde: <input type="date" name="fecha_inicio"> </label>
+                            <label> Hasta: <input type="date" name="fecha_final"> </label>
+                    </fieldset>
+                    <input type= "submit" name= "buscar" value="Buscar">
+                </form>
+            </section>
+            <section>
+                <h3> Destacados </h3>
+                <ul>
+                    <li>
+                        <a href="https://ayudatpymes.com/gestron/cuota-autonomos/">
+                            <figure>
+                                <img src="../assets/imagenes/autonomos.png" alt="Noticia cotización autónomos" />
+                            </figure>
+                            Las nuevas cuotas para autónomos en 2024 y 2025
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.xunta.gal/notas-de-prensa/-/nova/87529/ley-calidad-alimentaria-entra-vigor-hoy-para-reforzar-apuesta-xunta-por-excelencia?langId=es_ES#:~:text=Santiago%20de%20Compostela%2C%207%20de,producciones%20primarias%20de%20nuestra%20comunidad.">
+                            <figure>
+                                <img src="../assets/imagenes/calidad_alimentaria.png" alt="Noticia calidad alimentaria" />
+                            </figure>
+                            Entra en vigor la Ley de calidad alimentaria
+                        </a>
+                    </li>
+                </ul>
+            </section>
         </main>
         <footer>
             <div class="footer-logo">
