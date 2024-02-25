@@ -42,6 +42,7 @@ main {
     background-image: url(../imagenes/fondo_horizonte.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100% 100%; 
 
     font-family: Verdana, sans-serif;
 
@@ -64,7 +65,7 @@ header {
 }
 
 footer {
-    background-color: orange;
+    background-color: rgb(255, 224, 138);
     color: black;
 
     display: flex;
