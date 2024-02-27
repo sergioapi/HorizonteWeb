@@ -38,6 +38,16 @@
     border: 0;
 }
 
+.imagen-cabecera figure {
+    margin: 0;
+}
+
+.imagen-cabecera img {
+    width: 100%;
+    height: auto; /* Para mantener la proporción original de la imagen */
+    display: block; /* Elimina el espacio adicional por ser un elemento en línea */
+}
+
 
 
 .titulo-formulario {
@@ -51,6 +61,7 @@
     border-color: #622c0c;
     background-color: rgb(255, 224, 138);
     padding: 30px;
+    color: #622c0c;
 
     input[type="text"]{
         width: 99.8%;
@@ -78,18 +89,19 @@
         border: 1px solid #ccc;
         box-sizing: border-box;
         border-radius: 5px;
+        color: #622c0c
     }
 }
 
 .submit {
     background-color: #de8c40;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
   
     padding: 10px 30px;
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
   
     /* Añadir efectos de transición */
     transition: background-color 0.3s ease;
