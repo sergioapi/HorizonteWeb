@@ -1,0 +1,112 @@
+@media screen and (min-width: 600px) {
+    ul {
+        column-count: 3;
+        column-gap: 12px;
+    }
+}
+
+.noticiario {
+    margin: 20px;
+}
+
+.noticiario li {
+    border: 2px solid chocolate;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega un sombreado al borde */
+}
+
+.noticiario a {
+    font-family:'Segoe UI', sans-serif;
+    font-weight: bold;
+    font-size: 110%;
+    
+    color:black;
+    text-decoration: none;
+}
+
+.noticiario a:hover {
+    color: darkgray;
+    text-decoration:solid;
+}
+
+
+
+.imagen-cabecera {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+.titulo-formulario {
+    font-family:fantasy;
+    color: #622c0c;
+    font-size: 200%;
+}
+
+.formulario {
+    border-radius: 10px;
+    border-color: #622c0c;
+    background-color: rgb(255, 224, 138);
+    padding: 30px;
+
+    input[type="text"]{
+        width: 99.8%;
+        padding: 10px;
+        margin: 8px 0px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    select {
+        width: 62.9%;
+        padding: 10px;
+        margin: 8px 20px 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    input[type="date"] {
+        width: 13%;
+        padding: 10px;
+        margin: 8px 2px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+}
+
+.submit {
+    background-color: #de8c40;
+    color: #fff;
+    font-size: 16px;
+  
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  
+    /* Añadir efectos de transición */
+    transition: background-color 0.3s ease;
+}
+  
+/* Cambiar color de fondo al pasar el ratón sobre el botón */
+.submit:hover {
+    background-color: #622c0c;
+}
+
+
+
+main {
+    background-image: none;
+    background-color: white;
+}
+
+h3 {
+    color: #622c0c
+}

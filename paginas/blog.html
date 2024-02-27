@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog | Horizonte Empresarial</title>
         <link rel="stylesheet" href="../assets/css/general.css" />
+        <link rel="stylesheet" href="../assets/css/multicol.css" />
     </head>
     <body>
         <header>
@@ -21,13 +22,13 @@
             </nav>
         </header>
         <main>
-            <section>
-                <figure><img src="../assets/imagenes/" alt="Imagen de fondo" /></figure>
+            <section class="imagen-cabecera">
+                <figure><img src="../assets/imagenes/blog2.png" alt="Imagen de fondo"/></figure>
             </section>
             <section>
                 <form>
-                    <fieldset>
-                        <legend> Buscar publicación </legend>
+                    <fieldset class="formulario">
+                        <legend class="titulo-formulario"> Buscar publicación </legend>
                             <input type="text" size="100" name="txt_nombre_pub" placeholder="Busca por título y/o área geográfica">
 
                             <select name="lista_tipo_servicio" size="1">
@@ -43,10 +44,10 @@
                             <label> Desde: <input type="date" name="fecha_inicio"> </label>
                             <label> Hasta: <input type="date" name="fecha_final"> </label>
                     </fieldset>
-                    <input type= "submit" name= "buscar" value="Buscar">
+                    <input type= "submit" name= "buscar" value="Buscar" class="submit">
                 </form>
             </section>
-            <section>
+            <section class="noticiario">
                 <h3> Destacados </h3>
                 <ul>
                     <li>
