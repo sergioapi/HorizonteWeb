@@ -13,6 +13,7 @@
     border: 2px solid chocolate;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega un sombreado al borde */
+    margin-bottom: 20px;
 }
 
 .noticiario a {
@@ -52,20 +53,25 @@
 
 .titulo-formulario {
     font-family:fantasy;
+    font-style: normal;
     color: #622c0c;
-    font-size: 200%;
+    font-size: 220%;
+
+    margin-top: -10px;
+    margin-bottom: 15px;
 }
 
 .formulario {
-    border-radius: 10px;
+    margin-left: 0;
+    margin-right: 0;
     border-color: #622c0c;
     background-color: rgb(255, 224, 138);
-    padding: 30px;
+    padding: 40px;
     color: #622c0c;
 
     input[type="text"]{
         width: 99.8%;
-        padding: 10px;
+        padding: 15px;
         margin: 8px 0px;
         display: inline-block;
         border: 1px solid #ccc;
@@ -73,8 +79,8 @@
         border-radius: 5px;
     }
     select {
-        width: 62.9%;
-        padding: 10px;
+        width: 62.75%;
+        padding: 15px;
         margin: 8px 20px 8px 0;
         display: inline-block;
         border: 1px solid #ccc;
@@ -83,7 +89,7 @@
     }
     input[type="date"] {
         width: 13%;
-        padding: 10px;
+        padding: 15px;
         margin: 8px 2px;
         display: inline-block;
         border: 1px solid #ccc;
@@ -98,10 +104,11 @@
     color: #fff;
     font-size: 20px;
   
-    padding: 10px 30px;
+    padding: 10px 70px;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
   
     /* Añadir efectos de transición */
     transition: background-color 0.3s ease;
