@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Servicios | Horizonte Empresarial</title>
         <link rel="stylesheet" href="../assets/css/general.css" />
+        <script src="../assets/js/calculadora.js" defer></script>
     </head>
     <body>
         <header>
@@ -56,7 +57,7 @@
         <section id="calculadora">
             <h2> ¡Te ayudamos!</h2>
             <form>
-                <fieldset>
+                <fieldset id="cbServicios">
                     <legend>Servicios requeridos</legend>
                     <input type="checkbox"> Asesoría Fiscal<br/>
                     <input type="checkbox"> Asesoría Financiera<br/>
@@ -92,7 +93,8 @@
                     <input type= "radio" name= "frecuencia" value="trimestral"> Trimestral <br/>
                     <input type= "radio" name= "frecuencia" value="anual"> Anual <br/>
                 </fieldset>
-                <input type= "submit" name= "enviar_form" value="Enviar">
+                <input type="button" id="btnCalcular" name="enviar_form" value="Calcular">
+
             </form>
         </section>
         </main>
