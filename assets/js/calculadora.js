@@ -40,3 +40,11 @@ function calcularPresupuesto() {
     alert('Tu presupuesto será de: ' + presupuesto.toFixed(2));
 
 }
+
+/**
+ * getElementById()
+ * getElementsByName()
+ * getElementsByClassName()
+ * getElementsByTagName()
+ * querySelectorAll()
+ */

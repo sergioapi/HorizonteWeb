@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Servicios | Horizonte Empresarial</title>
-        <link rel="stylesheet" href="../assets/css/general.css" />
-        <script src="../assets/js/calculadora.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <!-- Añadir width y height de la imagen -->
-            <a href="../index.html"> <figure><img src="../assets/imagenes/logoHEb1.png" alt="Logo Horizonte Empresarial" /></figure> </a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
-                    <li><a href="servicios_fiscal.html">SERVICIOS</a></li>
-                    <li><a href="clientes.html">CLIENTES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Horizonte Empresarial</title>
+    <link rel="stylesheet" href="../assets/css/general.css" />
+    <link rel="stylesheet" href="../assets/css/grid.css" />
+    <script src="../assets/js/calculadora.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Añadir width y height de la imagen -->
+        <a href="../index.html">
+            <figure><img src="../assets/imagenes/logoHEb1.png" alt="Logo Horizonte Empresarial" /></figure>
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
+                <li><a href="servicios_fiscal.html">SERVICIOS</a></li>
+                <li><a href="clientes.html">CLIENTES</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <!-- Añadir imagen de fondo -->
         <section>
-            <ul>
-                <li>
-                    <a href="./servicios6_laboral.html"> <figure><img src="../assets/imagenes/flecha_izquierda2.png" alt="Flecha Izquierda"></figure>  </a>
+            <ul class="lista_servicios">
+                <li id="flecha_izq">
+                    <a href="./servicios6_laboral.html">
+                        <figure><img src="../assets/imagenes/flecha_izquierda2.png" alt="Flecha Izquierda"></figure>
+                    </a>
                 </li>
-                <li>
-                    <h3>Laboral</h3>
-                    <!-- Añadir width y height de la imagen -->
-                    <figure><img src="../assets/imagenes/icono_laboral.png" alt="Icono de Asesoría Laboral"></figure>
+                <li id="servicio_izq">
+                    <div class="servicio">
+                        <h3>Laboral</h3>
+                        <!-- Añadir width y height de la imagen -->
+                        <figure><img src="../assets/imagenes/icono_laboral.png" alt="Icono de Asesoría Laboral">
+                        </figure>
+                    </div>
                 </li>
-                <li>
-                    <h3>Fiscal</h3>
-                    <ul>
-                        <li>Declaraciones y liquidaciones de impuestos</li>
-                        <li>Sucesión empresarial</li>
-                        <li>Planificación fiscal estatal y autonómica</li>
-                    </ul>
+                <li id="servicio_central">
+                    <div class="servicio">
+                        <h3>Fiscal</h3>
+                        <ul id="lista_central">
+                            <li>Declaraciones y liquidaciones de impuestos</li>
+                            <li>Sucesión empresarial</li>
+                            <li>Planificación fiscal estatal y autonómica</li>
+                        </ul>
+                    </div>
                 </li>
-                <li>
-                    <h3>Contable</h3><!-- Añadir width y height de la imagen -->
-                    <figure><img src="../assets/imagenes/icono_contable.png" alt="Icono de Asesoría Contable"></figure>
+                <li id="servicio_dcha">
+                    <div class="servicio">
+                        <h3>Contable</h3><!-- Añadir width y height de la imagen -->
+                        <figure><img src="../assets/imagenes/icono_contable.png" alt="Icono de Asesoría Contable">
+                        </figure>
+                    </div>
                 </li>
-                <li>
-                    <a href="./servicios2_contable.html"> <figure><img src="../assets/imagenes/flecha_derecha2.png" alt="Flecha Derecha"></figure> </a>
+                <li id="flecha_dcha">
+                    <a href="./servicios2_contable.html">
+                        <figure><img src="../assets/imagenes/flecha_derecha2.png" alt="Flecha Derecha"></figure>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -59,10 +76,10 @@
             <form>
                 <fieldset id="cbServicios">
                     <legend>Servicios requeridos</legend>
-                    <input type="checkbox"> Asesoría Fiscal<br/>
-                    <input type="checkbox"> Asesoría Financiera<br/>
-                    <input type="checkbox"> Asesoría Contable<br/>
-                    <input type="checkbox"> Asesoría Laboral<br/>
+                    <input type="checkbox"> Asesoría Fiscal<br />
+                    <input type="checkbox"> Asesoría Financiera<br />
+                    <input type="checkbox"> Asesoría Contable<br />
+                    <input type="checkbox"> Asesoría Laboral<br />
                     <input type="checkbox"> Otros servicios
                 </fieldset>
                 <fieldset>
@@ -89,29 +106,30 @@
                 </fieldset>
                 <fieldset>
                     <legend>Frecuencia de los servicios</legend>
-                    <input type= "radio" name= "frecuencia" value="mensual"> Mensual <br/>
-                    <input type= "radio" name= "frecuencia" value="trimestral"> Trimestral <br/>
-                    <input type= "radio" name= "frecuencia" value="anual"> Anual <br/>
+                    <input type="radio" name="frecuencia" value="mensual"> Mensual <br />
+                    <input type="radio" name="frecuencia" value="trimestral"> Trimestral <br />
+                    <input type="radio" name="frecuencia" value="anual"> Anual <br />
                 </fieldset>
                 <input type="button" id="btnCalcular" name="enviar_form" value="Calcular">
 
             </form>
         </section>
-        </main>
-        <footer>
-            <div class="footer-logo">
-                <!-- Añadir width y height de la imagen -->
-                <figure><img src="../assets/imagenes/logoHEb2.png" alt="Logo Horizonte Empresarial" /></figure>
-            </div>
-            <div class="footer-content">
-                <p> &copy; 2024 Horizonte Empresarial S.L. Todos los derechos reservados </p>
-                <ul>
-                    <!-- Añadir enlaces a otras paginas -->
-                    <li><a href="#">Aviso Legal</a></li>
-                    <li><a href="#">Política de cookies</a></li>
-                    <li><a href="#">Política de privacidad</a></li>
-                </ul>
-            </div>
-        </footer>
-    </body>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <!-- Añadir width y height de la imagen -->
+            <figure><img src="../assets/imagenes/logoHEb2.png" alt="Logo Horizonte Empresarial" /></figure>
+        </div>
+        <div class="footer-content">
+            <p> &copy; 2024 Horizonte Empresarial S.L. Todos los derechos reservados </p>
+            <ul>
+                <!-- Añadir enlaces a otras paginas -->
+                <li><a href="#">Aviso Legal</a></li>
+                <li><a href="#">Política de cookies</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
 </html>
