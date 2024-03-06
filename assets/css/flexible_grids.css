@@ -1,0 +1,119 @@
+@media screen and (min-width: 600px) {
+    .col1 {
+        width: 42.00%;
+        float: left;
+        left: 0;
+
+        position: absolute;
+        top: 50%;
+        border: 2px solid #f8f8f8;
+        box-sizing: border-box;
+        background-color: #ccc;
+        border-radius: 10px;
+        margin-left: 75px;
+        padding: 22.5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .col2 {
+        width: 42.00%;
+        float: right;
+        right: 0;
+        
+        position: absolute;
+        top: 50%;
+        border: 2px solid #f8f8f8;
+        box-sizing: border-box;
+        background-color: #ccc;
+        border-radius: 10px;
+        margin-right: 75px;
+        padding: 22.5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .col1 p,
+    .col2 p {
+        color: #333;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+
+.imagen-cabecera {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    position: relative;
+}
+
+.imagen-cabecera figure {
+    margin: 0;
+}
+
+.imagen-cabecera img {
+    width: 100%;
+    height: auto; /* Para mantener la proporción original de la imagen */
+    display: block; /* Elimina el espacio adicional por ser un elemento en línea */
+}
+
+.imagen-cabecera h1 {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: center;
+    margin: 0; 
+}
+
+/* Agrega un fondo semi-transparente para que el texto sea legible */
+.imagen-cabecera::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4); 
+}
+
+
+.empleado_izq,
+.empleado_der {
+    display: inline-block;
+    margin: 20px 5%;
+}
+
+.empleado_izq img,
+.empleado_der img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.empleado_izq {
+    float: left;
+    
+    border: 2px solid #de8c40;
+    box-sizing: border-box;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.empleado_der {
+    float: right;
+
+    border: 2px solid #de8c40;
+    box-sizing: border-box;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+
+main {
+    background-image: none;
+    background-color: white;
+}

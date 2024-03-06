@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog | Horizonte Empresarial</title>
         <link rel="stylesheet" href="../assets/css/general.css" />
-        <link rel="stylesheet" href="../assets/css/multicol.css" />
+        <link rel="stylesheet" href="../assets/css/flex_container.css" />
     </head>
     <body>
         <header>
@@ -28,21 +28,39 @@
             <section>
                 <form>
                     <fieldset class="formulario">
-                        <h2 class="titulo-formulario"> Buscar publicación </h2>
-                            <input type="text" size="100" name="txt_nombre_pub" placeholder="Busca por título y/o área geográfica">
-
-                            <select name="lista_tipo_servicio" size="1">
-                                <option value="" selected disabled>Seleccione un servicio</option>
-                                <option value= "laboral"> Asesoría Laboral </option>
-                                <option value= "fiscal"> Asesoría Fiscal </option>
-                                <option value= "contable"> Asesoría Contable </option>
-                                <option value= "mercantil"> Asesoría Mercantil </option>
-                                <option value= "juridica"> Asesoría Jurídica </option>
-                                <option value= "financiera"> Asesoría Financiera </option>
-                            </select>
-
-                            <label> Desde: <input type="date" name="fecha_inicio"> </label>
-                            <label> Hasta: <input type="date" name="fecha_final"> </label>
+                        <h2 class="titulo-formulario">Buscar publicación</h2>
+                    
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="txt_nombre_pub" name="txt_nombre_pub" size="100" placeholder="Buscar por título:">
+                            </div>
+                        </div>
+                    
+                        <div class="form-row">
+                            <div class="form-mid-row">
+                                <div class="form-group">
+                                    <select id="lista_tipo_servicio" name="lista_tipo_servicio" size="1">
+                                        <option value="" selected disabled>Seleccione un servicio:</option>
+                                        <option value="laboral">Asesoría Laboral</option>
+                                        <option value="fiscal">Asesoría Fiscal</option>
+                                        <option value="contable">Asesoría Contable</option>
+                                        <option value="mercantil">Asesoría Mercantil</option>
+                                        <option value="juridica">Asesoría Jurídica</option>
+                                        <option value="financiera">Asesoría Financiera</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-mid-row">
+                                <div class="form-group">
+                                    <input type="date" id="fecha_inicio" name="fecha_inicio" placeholder="Desde:">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <input type="date" id="fecha_final" name="fecha_final" placeholder="Hasta:">
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
                     <input type= "submit" name= "buscar" value="Buscar" class="submit">
                 </form>
