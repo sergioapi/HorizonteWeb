@@ -53,7 +53,7 @@ main {
 }
 
 header {
-    background-color: chocolate;
+    background-color: #d2691e;
 
     display: flex;
     justify-content: space-between;
