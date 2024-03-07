@@ -1,0 +1,125 @@
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 240%;
+}
+
+h2 {
+    font-family: Calibri, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    font-size: 180%;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+}
+
+button {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 14px;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0; /* Elimina el margen de la lista para evitar espacios adicionales */
+}
+
+ul li {
+    margin-right: 10px;
+}
+
+main {
+    background-image: url(../imagenes/fondo_horizonte.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; 
+
+    font-family: Verdana, sans-serif;
+
+    flex-grow: 1; /* Esto permite que el elemento se expanda y ocupe todo el espacio disponible */
+    min-height: 100vh; /* Establece una altura mínima del 100% del viewport height */
+    display: flex;
+    flex-direction: column; 
+}
+
+header {
+    background-color: chocolate;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    background-color: rgb(255, 224, 138);
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 80px;
+}
+
+.footer-logo {
+    margin-right: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos a la derecha del contenedor */
+}
+
+.footer-content p {
+    margin: 0; /* Elimina el margen del párrafo para evitar espacios adicionales */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.menu {
+    margin-right: 40px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.menu a {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: darkgray;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+}
