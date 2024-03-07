@@ -5,6 +5,15 @@
     padding: 10px;
 }
 
+#servicio_central{
+    border: 2px solid coral;
+    border-radius: 50%;
+    margin: 5px;
+    padding: 50px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
 #lista_central {
     list-style-type: circle;
     padding: 0;
@@ -16,6 +25,52 @@
 #lista_central li {
     margin-bottom: 10px;
 }
+
+.calculadora{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 100px;
+    grid-gap: 10px;
+
+    padding-left: 50px;
+    margin-right: 100px;
+}
+
+#cbServicios{
+    grid-column: 1;
+    grid-row: 1 / 2;
+
+    padding-left: 35%;
+    
+    text-align: left;
+}
+
+#cbServicios input{
+margin-top: 12px;
+}
+
+#dlLocalizacion{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#listaCliete{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#radioFrecuencia{
+    grid-column: 2;
+    grid-row: 2 / 3;
+
+    padding-left: 35%;
+    text-align: left;
+}
+
+#radioFrecuencia input{
+    margin-top: 5px;
+}
+
 
 
 /*
