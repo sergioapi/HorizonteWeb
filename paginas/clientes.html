@@ -1,91 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clientes | Horizonte Empresarial</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
     <link rel="stylesheet" href="../assets/css/general.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- Añadir width y height de la imagen -->
-        <a href="../index.html">
-            <figure><img src="../assets/imagenes/logoHEb1.png" alt="Logo Horizonte Empresarial" /></figure>
+      <div class="logo-menu">
+        <a href="../index.html" class="logo-menu__link">
+          <img
+            src="../assets/imagenes/logoHEb1.png"
+            alt="Logo Horizonte Empresarial"
+          />
         </a>
-        <nav class="menu">
-            <ul>
-                <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="servicios_fiscal.html">SERVICIOS</a></li>
-                <li><a href="clientes.html">CLIENTES</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-            </ul>
-        </nav>
+      </div>
+      <div id="toggle-menu" class="toggle-menu">
+        <img src="../assets/imagenes/burger-icon.png" alt="" />
+      </div>
+      <ul id="main-menu" class="main-menu">
+        <li class="main-menu__item">
+          <a href="nosotros.html" class="main-menu__link">SOBRE NOSOTROS</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="servicios3_financiero.html" class="main-menu__link"
+            >SERVICIOS</a
+          >
+        </li>
+        <li class="main-menu__item">
+          <a href="clientes.html" class="main-menu__link">CLIENTES</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="contacto.html" class="main-menu__link">CONTACTO</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="blog.html" class="main-menu__link">BLOG</a>
+        </li>
+      </ul>
     </header>
+    <script src="../assets/js/menu.js"></script>
     <main>
-        <section>
-            <figure><img src="../assets/imagenes/" alt="Imagen de fondo" /></figure>
-        </section>
-        <section>
-            <ul>
-                <li>
-                    <figure><img src="../assets/imagenes/logoCliente1.png" alt="Logo cliente" /></figure>
-                </li>
-                <li>
-                    <figure><img src="../assets/imagenes/logoMduse.png" alt="Logo cliente" /></figure>
-                </li>
-                <li>
-                    <figure><img src="../assets/imagenes/logoLupa.png" alt="Logo cliente" /></figure>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <ul>
-                <li>
-                    <figure><img src="../assets/imagenes/icono_cliente.png" alt="Icono cliente" /></figure>
-                    <h5>CLIENTE 1</h5>
-                    <figure><img src="../assets/imagenes/icono_estrellas.png" alt="Icono estrellas" /></figure>
-                    <p>Texto de la reseña</p>
-                </li>
-                <li>
-                    <figure><img src="../assets/imagenes/icono_cliente.png" alt="Icono cliente" /></figure>
-                    <h5>CLIENTE 2</h5>
-                    <figure><img src="../assets/imagenes/icono_estrellas.png" alt="Icono estrellas" /></figure>
-                    <p>Texto de la reseña</p>
-                </li>
-                <li>
-                    <figure><img src="../assets/imagenes/icono_cliente.png" alt="Icono cliente" /></figure>
-                    <h5>CLIENTE 3</h5>
-                    <figure><img src="../assets/imagenes/icono_estrellas.png" alt="Icono estrellas" /></figure>
-                    <p>Texto de la reseña</p>
-                </li>
-                <li>
-                    <figure><img src="../assets/imagenes/icono_cliente.png" alt="Icono cliente" /></figure>
-                    <h5>CLIENTE 4</h5>
-                    <figure><img src="../assets/imagenes/icono_estrellas.png" alt="Icono estrellas" /></figure>
-                    <p>Texto de la reseña</p>
-                </li>
-            </ul>
-            <a href="contacto.html"><button>CONTÁCTANOS</button> </a>
-        </section>
+      <section>
+        <figure><img src="../assets/imagenes/" alt="Imagen de fondo" /></figure>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <figure>
+              <img
+                src="../assets/imagenes/logoCliente1.png"
+                alt="Logo cliente"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="../assets/imagenes/logoMduse.png" alt="Logo cliente" />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="../assets/imagenes/logoLupa.png" alt="Logo cliente" />
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <figure>
+              <img
+                src="../assets/imagenes/icono_cliente.png"
+                alt="Icono cliente"
+              />
+            </figure>
+            <h5>CLIENTE 1</h5>
+            <figure>
+              <img
+                src="../assets/imagenes/icono_estrellas.png"
+                alt="Icono estrellas"
+              />
+            </figure>
+            <p>Texto de la reseña</p>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="../assets/imagenes/icono_cliente.png"
+                alt="Icono cliente"
+              />
+            </figure>
+            <h5>CLIENTE 2</h5>
+            <figure>
+              <img
+                src="../assets/imagenes/icono_estrellas.png"
+                alt="Icono estrellas"
+              />
+            </figure>
+            <p>Texto de la reseña</p>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="../assets/imagenes/icono_cliente.png"
+                alt="Icono cliente"
+              />
+            </figure>
+            <h5>CLIENTE 3</h5>
+            <figure>
+              <img
+                src="../assets/imagenes/icono_estrellas.png"
+                alt="Icono estrellas"
+              />
+            </figure>
+            <p>Texto de la reseña</p>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="../assets/imagenes/icono_cliente.png"
+                alt="Icono cliente"
+              />
+            </figure>
+            <h5>CLIENTE 4</h5>
+            <figure>
+              <img
+                src="../assets/imagenes/icono_estrellas.png"
+                alt="Icono estrellas"
+              />
+            </figure>
+            <p>Texto de la reseña</p>
+          </li>
+        </ul>
+        <a href="contacto.html"><button>CONTÁCTANOS</button> </a>
+      </section>
     </main>
     <footer>
-        <div class="footer-logo">
-            <!-- Añadir width y height de la imagen -->
-            <figure><img src="../assets/imagenes/logoHEb2.png" alt="Logo Horizonte Empresarial" /></figure>
-        </div>
-        <div class="footer-content">
-            <p> &copy; 2024 Horizonte Empresarial S.L. Todos los derechos reservados </p>
-            <ul>
-                <!-- Añadir enlaces a otras paginas -->
-                <li><a href="#">Aviso Legal</a></li>
-                <li><a href="#">Política de cookies</a></li>
-                <li><a href="#">Política de privacidad</a></li>
-            </ul>
-        </div>
+      <div class="footer-logo">
+        <!-- Añadir width y height de la imagen -->
+        <figure>
+          <img
+            src="../assets/imagenes/logoHEb2.png"
+            alt="Logo Horizonte Empresarial"
+          />
+        </figure>
+      </div>
+      <div class="footer-content">
+        <p>
+          &copy; 2024 Horizonte Empresarial S.L. Todos los derechos reservados
+        </p>
+        <ul>
+          <!-- Añadir enlaces a otras paginas -->
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+        </ul>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

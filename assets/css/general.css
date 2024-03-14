@@ -1,123 +1,155 @@
 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 240%;
+  font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 240%;
 }
 
 h2 {
-    font-family: Calibri, sans-serif;
-    font-weight: lighter;
-    font-style: italic;
-    text-align: center;
-    font-size: 180%;
+  font-family: Calibri, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+  font-size: 180%;
 }
 
 h3 {
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 120%;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 120%;
 }
 
 button {
-    text-transform: uppercase;
-    font-family: 'Franklin Gothic Medium', sans-serif;
-    font-size: 14px;
-
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 0; /* Elimina el margen de la lista para evitar espacios adicionales */
-}
-
-ul li {
-    margin-right: 10px;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: 14px;
 }
 
 main {
-    background-image: url(../imagenes/fondo_horizonte.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%; 
+  background-image: url(../imagenes/fondo_horizonte.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
 
-    font-family: Verdana, sans-serif;
-
-    flex-grow: 1; /* Esto permite que el elemento se expanda y ocupe todo el espacio disponible */
-    min-height: 100vh; /* Establece una altura mínima del 100% del viewport height */
-    display: flex;
-    flex-direction: column; 
+body {
+  font-family: Verdana, sans-serif;
+  min-height: 100vh; /* Establece una altura mínima del 100% del viewport height */
+  color: #1b1a17;
+  margin: 0;
 }
 
 header {
-    background-color: #d2691e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff9f45;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 70px;
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+  }
+}
+
+.logo-menu {
+  /*border: 1px solid orchid;*/
+  margin-top: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-menu {
+    margin-left: 12px;
+  }
+}
+
+.toggle-menu {
+  position: absolute;
+  top: 0.8rem;
+  right: 1.5rem;
+  cursor: pointer;
+  filter: invert(0.3);
+  width: 40px;
+  z-index: 1;
+}
+
+.toggle-menu > img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .toggle-menu {
+    display: none;
+  }
+}
+
+.main-menu {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  display: none;
+}
+
+.main-menu--show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .main-menu {
+    display: flex;
+    flex-direction: row;
+    float: right;
+  }
+}
+
+.main-menu__item {
+  padding: 1em;
+}
+
+.main-menu__link {
+  color: #562349;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-menu__link:hover{
+    color: #AD6989;
+    text-decoration: underline;
+}
+
+
 
 footer {
     background-color: rgb(255, 224, 138);
     color: black;
-
+  
     display: flex;
     justify-content: center;
     align-items: center;
-
+  
     min-height: 80px;
-}
-
-.footer-logo {
+  }
+  
+  .footer-logo {
     margin-right: 20px; /* Ajusta el margen según sea necesario */
-}
-
-.footer-content {
+  }
+  
+  .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center; /* Alinea los elementos a la derecha del contenedor */
-}
-
-.footer-content p {
+  }
+  
+  .footer-content p {
     margin: 0; /* Elimina el margen del párrafo para evitar espacios adicionales */
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-
-.menu {
-    margin-right: 40px;
-}
-
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.menu li {
-    margin-right: 30px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.menu a:hover {
-    color: darkgray;
-    text-decoration: underline;
-}
+  }

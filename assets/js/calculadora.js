@@ -28,7 +28,7 @@ function calcularPresupuesto() {
   }
 
   const tipoClienteSeleccionado = document
-    .getElementsByName('lista_tipo_cliente')[0]
+    .getElementsByTagName('select')[0]
     .value.trim();
   if (Object.prototype.hasOwnProperty.call(tasas, tipoClienteSeleccionado)) {
     presupuesto += presupuesto * tasas[tipoClienteSeleccionado];
@@ -47,12 +47,12 @@ function calcularPresupuesto() {
   alert(`Tu presupuesto será de: ${presupuesto.toFixed(2)}`);
 }
 
-document.getElementById('btnCalcular').addEventListener('click', calcularPresupuesto);
+document.getElementsByClassName('btnCalcular')[0].addEventListener('click', calcularPresupuesto);
 
 /**
- * getElementById()
- * getElementsByName()
- * getElementsByClassName()
- * getElementsByTagName()
- * querySelectorAll()
+ * getElementById() V
+ * getElementsByName() V
+ * getElementsByClassName() V
+ * getElementsByTagName() V
+ * querySelectorAll() V
  */

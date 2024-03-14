@@ -1,77 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nostros | Horizonte Empresarial</title>
-        <link rel="stylesheet" href="../assets/css/general.css" />
-        <link rel="stylesheet" href="../assets/css/flexible_grids.css" />
-    </head>
-    <body>
-        <header>
-            <!-- Añadir width y height de la imagen -->
-            <a href="../index.html"> <figure><img src="../assets/imagenes/logoHEb1.png" alt="Logo Horizonte Empresarial" /></figure> </a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
-                    <li><a href="servicios_fiscal.html">SERVICIOS</a></li>
-                    <li><a href="clientes.html">CLIENTES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="imagen-cabecera">
-                <h1> ¿Quiénes somos? </h1>
-                <div class="col1">
-                    <p> Somos una firma internacional de servicios legales y fiscales que asesora a nivel local, regional y global desde todos los ángulos del derecho de los negocios. </p>
-                </div>
-                <div class="col2">
-                    <p> Nuestra actividad se centra en el asesoramiento integral a empresas de todo tipo, pequeñas, medianas y grandes, dentro de los ámbitos contable, fiscal, laboral, mercantil, jurídico y financiero.</p>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostros | Horizonte Empresarial</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/general.css" />
+    <link rel="stylesheet" href="../assets/css/flexible_grids.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-menu">
+        <a href="../index.html" class="logo-menu__link">
+          <img
+            src="../assets/imagenes/logoHEb1.png"
+            alt="Logo Horizonte Empresarial"
+          />
+        </a>
+      </div>
+      <div id="toggle-menu" class="toggle-menu">
+        <img src="../assets/imagenes/burger-icon.png" alt="" />
+      </div>
+      <ul id="main-menu" class="main-menu">
+        <li class="main-menu__item">
+          <a href="nosotros.html" class="main-menu__link">SOBRE NOSOTROS</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="servicios3_financiero.html" class="main-menu__link"
+            >SERVICIOS</a
+          >
+        </li>
+        <li class="main-menu__item">
+          <a href="clientes.html" class="main-menu__link">CLIENTES</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="contacto.html" class="main-menu__link">CONTACTO</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="blog.html" class="main-menu__link">BLOG</a>
+        </li>
+      </ul>
+    </header>
+    <script src="../assets/js/menu.js"></script>
+    <main>
+      <div class="imagen-cabecera">
+        <h1>¿Quiénes somos?</h1>
+        <div class="col1">
+          <p>
+            Somos una firma internacional de servicios legales y fiscales que
+            asesora a nivel local, regional y global desde todos los ángulos del
+            derecho de los negocios.
+          </p>
+        </div>
+        <div class="col2">
+          <p>
+            Nuestra actividad se centra en el asesoramiento integral a empresas
+            de todo tipo, pequeñas, medianas y grandes, dentro de los ámbitos
+            contable, fiscal, laboral, mercantil, jurídico y financiero.
+          </p>
+        </div>
+      </div>
 
-            <h1>Nuestro equipo</h1>
-            <div class="contenedor-empleado">
-                <div class="empleado">
-                    <figure><img src="../assets/imagenes/empleado1_sinfondo.png" alt="Imagen empleado"/></figure>
-                </div>
-                <div class="texto_emp">
-                    <p>Pablo Montero</p>
-                    <p>Economista y Máster en Fiscalidad y Tributación</p>
-                </div>
-            </div>
+      <h1>Nuestro equipo</h1>
+      <div class="contenedor-empleado">
+        <div class="empleado">
+          <figure>
+            <img
+              src="../assets/imagenes/empleado1_sinfondo.png"
+              alt="Imagen empleado"
+            />
+          </figure>
+        </div>
+        <div class="texto_emp">
+          <p>Pablo Montero</p>
+          <p>Economista y Máster en Fiscalidad y Tributación</p>
+        </div>
+      </div>
 
-            <div class="contenedor-empleado">
-                <div class="texto_emp">
-                    <p>Rosa Carreira</p>
-                    <p>Departamento Fiscal</p>
-                    <p>Más de 20 años de experiencia en asesoría fiscal y contable.</p>
-                </div>
-                <div class="empleado">
-                    <figure><img class="empleado_der" src="../assets/imagenes/empleado2_sinfondo.png" alt="Imagen empleado"/></figure>
-                </div>
-            </div>
-            
-            <figure><img class="empleado_izq" src="../assets/imagenes/empleado3_sinfondo.png" alt="Imagen empleado"/></figure>
-            <figure><img class="empleado_der" src="../assets/imagenes/empleado4_sinfondo.png" alt="Imagen empleado"/></figure>
+      <div class="contenedor-empleado">
+        <div class="texto_emp">
+          <p>Rosa Carreira</p>
+          <p>Departamento Fiscal</p>
+          <p>Más de 20 años de experiencia en asesoría fiscal y contable.</p>
+        </div>
+        <div class="empleado">
+          <figure>
+            <img
+              class="empleado_der"
+              src="../assets/imagenes/empleado2_sinfondo.png"
+              alt="Imagen empleado"
+            />
+          </figure>
+        </div>
+      </div>
 
-        </main>
-        <footer>
-            <div class="footer-logo">
-                <!-- Añadir width y height de la imagen -->
-                <figure><img src="../assets/imagenes/logoHEb2.png" alt="Logo Horizonte Empresarial" /></figure>
-            </div>
-            <div class="footer-content">
-                <p> &copy; 2024 Horizonte Empresarial S.L. Todos los derechos reservados </p>
-                <ul>
-                    <!-- Añadir enlaces a otras paginas -->
-                    <li><a href="#">Aviso Legal</a></li>
-                    <li><a href="#">Política de cookies</a></li>
-                    <li><a href="#">Política de privacidad</a></li>
-                </ul>
-            </div>
-        </footer>
-    </body>
+      <figure>
+        <img
+          class="empleado_izq"
+          src="../assets/imagenes/empleado3_sinfondo.png"
+          alt="Imagen empleado"
+        />
+      </figure>
+      <figure>
+        <img
+          class="empleado_der"
+          src="../assets/imagenes/empleado4_sinfondo.png"
+          alt="Imagen empleado"
+        />
+      </figure>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <!-- Añadir width y height de la imagen -->
+        <figure>
+          <img
+            src="../assets/imagenes/logoHEb2.png"
+            alt="Logo Horizonte Empresarial"
+          />
+        </figure>
+      </div>
+      <div class="footer-content">
+        <p>
+          &copy; 2024 Horizonte Empresarial S.L. Todos los derechos reservados
+        </p>
+        <ul>
+          <!-- Añadir enlaces a otras paginas -->
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,94 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto | Horizonte Empresarial</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
     <link rel="stylesheet" href="../assets/css/general.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- Añadir width y height de la imagen -->
-        <a href="../index.html">
-            <figure><img src="../assets/imagenes/logoHEb1.png" alt="Logo Horizonte Empresarial" /></figure>
+      <div class="logo-menu">
+        <a href="../index.html" class="logo-menu__link">
+          <img
+            src="../assets/imagenes/logoHEb1.png"
+            alt="Logo Horizonte Empresarial"
+          />
         </a>
-        <nav class="menu">
-            <ul>
-                <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="servicios_fiscal.html">SERVICIOS</a></li>
-                <li><a href="clientes.html">CLIENTES</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-            </ul>
-        </nav>
+      </div>
+      <div id="toggle-menu" class="toggle-menu">
+        <img src="../assets/imagenes/burger-icon.png" alt="" />
+      </div>
+      <ul id="main-menu" class="main-menu">
+        <li class="main-menu__item">
+          <a href="nosotros.html" class="main-menu__link">SOBRE NOSOTROS</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="servicios3_financiero.html" class="main-menu__link"
+            >SERVICIOS</a
+          >
+        </li>
+        <li class="main-menu__item">
+          <a href="clientes.html" class="main-menu__link">CLIENTES</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="contacto.html" class="main-menu__link">CONTACTO</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="blog.html" class="main-menu__link">BLOG</a>
+        </li>
+      </ul>
     </header>
+    <script src="../assets/js/menu.js"></script>
     <main>
+      <section>
+        <h1>Estamos aquí para ayudarte</h1>
         <section>
-            <h1>Estamos aquí para ayudarte</h1>
-            <section>
-                <!-- <figure><img src="../assets/imagenes/mapa_contacto.png" alt="Mapa"/></figure> -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.003910795019!2d-8.547322724342932!3d42.87276160255736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe3f192975d7%3A0x2ae73687fa75776d!2sR%C3%BAa%20do%20H%C3%B3rreo%2C%20Santiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1708019586249!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-            <section>
-                <ul>
-                    <li>
-                        <figure><img src="../assets/imagenes/icono_ubicacion.png" alt="Icono ubicación" /></figure>
-                        <p>Oficina</br>Rúa do Hórreo</br>17003 - A Coruña</p>
-                    </li>
-                    <li>
-                        <figure><img src="../assets/imagenes/icono_reloj.png" alt="Icono reloj" /></figure>
-                        <p>Lunes a jueves de 8 a 16 h</br>Viernes de 8 a 14 h</p>
-                    </li>
-                    <li>
-                        <figure><img src="../assets/imagenes/icono_mail.png" alt="Icono sobre" /></figure>
-                        <p>infor@he.com</p>
-                    </li>
-                    <li>
-                        <figure><img src="../assets/imagenes/icono_tlf.png" alt="Icono teléfono" /></figure>
-                        <p>Teléfono: 981 562 408</br>WhatsApp: 620 315 709</p>
-                    </li>
-                </ul>
-            </section>
+          <!-- <figure><img src="../assets/imagenes/mapa_contacto.png" alt="Mapa"/></figure> -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.003910795019!2d-8.547322724342932!3d42.87276160255736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe3f192975d7%3A0x2ae73687fa75776d!2sR%C3%BAa%20do%20H%C3%B3rreo%2C%20Santiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1708019586249!5m2!1ses!2ses"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </section>
         <section>
-            <h2>¿Qué necesitas?</h2>
-
-            <form name="Contacto" action="" method="post" enctype="multipart/form-data">
-                <fieldset>
-                    <label for="txName">Nombre </label>
-                    <input id="txName" type="text" name="nombre" placeholder="Escribe aquí tu nombre..." />
-
-                    <label for="txMail">Correo electrónico </label>
-                    <input id="txMail" type="text" name="correo" placeholder="Escribe aquí tu e-mail..." />
-
-                    <label for="taMsj">Mensaje</label>
-                    <textarea id="taMsj" name="mensaje" rows="4" cols="50"
-                        placeholder="Escribe aquí tu mensaje..."></textarea>
-
-                    <input type="file" name="arch1" size="50" value="Adjuntar archivo" />
-                    <input type="submit" name="env1" value="Enviar" />
-                </fieldset>
-            </form>
-
+          <ul>
+            <li>
+              <figure>
+                <img
+                  src="../assets/imagenes/icono_ubicacion.png"
+                  alt="Icono ubicación"
+                />
+              </figure>
+              <p>Oficina<br />Rúa do Hórreo<br />17003 - A Coruña</p>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="../assets/imagenes/icono_reloj.png"
+                  alt="Icono reloj"
+                />
+              </figure>
+              <p>Lunes a jueves de 8 a 16 h<br />Viernes de 8 a 14 h</p>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="../assets/imagenes/icono_mail.png"
+                  alt="Icono sobre"
+                />
+              </figure>
+              <p>infor@he.com</p>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="../assets/imagenes/icono_tlf.png"
+                  alt="Icono teléfono"
+                />
+              </figure>
+              <p>Teléfono: 981 562 408<br />WhatsApp: 620 315 709</p>
+            </li>
+          </ul>
         </section>
+      </section>
+      <section>
+        <h2>¿Qué necesitas?</h2>
+
+        <form
+          name="Contacto"
+          action=""
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <fieldset>
+            <label for="txName">Nombre </label>
+            <input
+              id="txName"
+              type="text"
+              name="nombre"
+              placeholder="Escribe aquí tu nombre..."
+            />
+
+            <label for="txMail">Correo electrónico </label>
+            <input
+              id="txMail"
+              type="text"
+              name="correo"
+              placeholder="Escribe aquí tu e-mail..."
+            />
+
+            <label for="taMsj">Mensaje</label>
+            <textarea
+              id="taMsj"
+              name="mensaje"
+              rows="4"
+              cols="50"
+              placeholder="Escribe aquí tu mensaje..."
+            ></textarea>
+
+            <input
+              type="file"
+              name="arch1"
+              size="50"
+              value="Adjuntar archivo"
+            />
+            <input type="submit" name="env1" value="Enviar" />
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer>
-        <div class="footer-logo">
-            <!-- Añadir width y height de la imagen -->
-            <figure><img src="../assets/imagenes/logoHEb2.png" alt="Logo Horizonte Empresarial" /></figure>
-        </div>
-        <div class="footer-content">
-            <p> &copy; 2024 Horizonte Empresarial S.L. Todos los derechos reservados </p>
-            <ul>
-                <!-- Añadir enlaces a otras paginas -->
-                <li><a href="#">Aviso Legal</a></li>
-                <li><a href="#">Política de cookies</a></li>
-                <li><a href="#">Política de privacidad</a></li>
-            </ul>
-        </div>
+      <div class="footer-logo">
+        <!-- Añadir width y height de la imagen -->
+        <figure>
+          <img
+            src="../assets/imagenes/logoHEb2.png"
+            alt="Logo Horizonte Empresarial"
+          />
+        </figure>
+      </div>
+      <div class="footer-content">
+        <p>
+          &copy; 2024 Horizonte Empresarial S.L. Todos los derechos reservados
+        </p>
+        <ul>
+          <!-- Añadir enlaces a otras paginas -->
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+        </ul>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
