@@ -1,38 +1,36 @@
 @media screen and (min-width: 500px) {
     .col1 {
         width: 42.00%;
-        float: left;
-        left: 0;
 
         position: relative;
         top: 50%;
-        border: 2px solid #f8f8f8;
+        border: 6px ridge #f8f8f8;
         box-sizing: border-box;
         background-color: #ccc;
 
         border-radius: 10px;
         margin-left: 100px;
-        margin-bottom: 30px;
-        padding: 22.5px;
+        margin-right: 100px;
+        margin-bottom: 20px;
+        padding: 25px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     }
 
     .col2 {
         width: 42.00%;
-        float: right;
-        right: 0;
         
         position: relative;
         top: 50%;
-        border: 2px solid #f8f8f8;
+        border: 6px ridge #f8f8f8;
         box-sizing: border-box;
         background-color: #ccc;
 
         border-radius: 10px;
+        margin-left: 100px;
         margin-right: 100px;
         margin-top: 20px;
         margin-bottom: 50px;
-        padding: 22.5px;
+        padding: 25px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     }
 
@@ -65,38 +63,101 @@
     color: #ccc; 
     text-align: center;
     display: block;
-    margin-top: 120px;
-    margin-bottom: 60px;
+    margin-top: 110px;
+    margin-bottom: 50px;
 }
 
 
-@media screen and (min-width: 500px) {
+.nuestro_equipo {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: #de8c40;
+}
+
+.nuestro_equipo span {
+    font-size: 2em; 
+}
+
+
+/*Nuestro equipo*/
+.contenedor-empleado {
+    display: flex;
+    align-items: center;
+    margin: 20px 5%;
+}
+
+.empleado_der figure img {
+    width: 100%;
+    border: 2px solid #de8c40;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.texto_emp_der {
+    width: 60%;
+    padding: 13px;
+    box-sizing: border-box;
+    border: 2px solid #de8c40;
+    border-radius: 10px;
+}
+
+.empleado_izq figure img {
+    width: 100%;
+    border: 2px solid #de8c40;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.texto_emp_izq {
+    width: 60%;
+    padding: 13px;
+    box-sizing: border-box;
+    border: 2px solid #de8c40;
+    border-radius: 10px;
+}
+
+.contenedor-empleado h1 {
+    color: orange;
+}
+
+#primer_dato {
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 15px;
+
+    text-align: left;
+}
+
+.datos_contacto {
+    padding-left: 20px;
+    padding-right: 15px;
+
+    text-align: left;
+}
+
+.datos {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 15px;
+
+    color: grey;
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+
     .contenedor-empleado {
-        display: flex;
+        flex-direction: column;
         align-items: center;
         margin: 20px 5%;
-    }
-
-    .empleado figure img {
-        width: 100%;
-        display: block;
-        border: 2px solid #de8c40;
-        box-sizing: border-box;
-        background-color: #ccc;
-        border-radius: 10px;
-    }
-
-    .texto_emp {
-        width: 60%;
-        padding: 20px;
-        box-sizing: border-box;
-        border: 2px solid #de8c40;
-        background-color: #ccc;
-        border-radius: 10px;
     }
 }
 
 main {
     background-image: none;
     background-color: white;
+}
+
+header {
+    z-index: 2;
 }

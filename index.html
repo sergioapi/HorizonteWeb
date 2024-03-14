@@ -7,6 +7,7 @@
     <title>Horizonte Empresarial</title>
     <link rel="stylesheet" href="../assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/general.css" />
+    <link rel="stylesheet" href="assets/css/pagina_inicial.css" />
 </head>
 
 <body>
@@ -27,19 +28,23 @@
     </header>
     <main>
         <section>
-            <!-- Añadir imagen de fondo -->
-            <h1>Horizonte Empresarial</h1>
-            <h2>Construímos tu futuro</h2>
-            <a href="paginas/contacto.html"><button>CONTÁCTANOS</button> </a>
-        </section>
-        <section>
-            <ul>
-                <!-- Añadir enlaces a otras paginas -->
-                <li><a href="paginas/servicios_fiscal.html">Asesoría Fiscal</a></li>
-                <li><a href="paginas/servicios3_financiero.html">Asesoría Financiera</a></li>
-                <li><a href="paginas/servicios2_contable.html">Asesoría Contable</a></li>
-                <li><a href="paginas/servicios6_laboral.html">Asesoría Laboral</a></li>
-                <li><a href="paginas/servicios4_mercantil.html">Otros Servicios</a></li>
+            <video autoplay muted loop id="background-video">
+                <source src="assets/imagenes/oceano.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        
+            <div class="content">
+                <h1>Horizonte Empresarial</h1>
+                <h2>Construímos tu futuro</h2>
+                <a href="paginas/contacto.html"><button>CONTÁCTANOS</button></a>
+            </div>
+
+            <ul class="servicios-lista">
+                <li class="icono-fiscal"><a href="paginas/servicios_fiscal.html">Asesoría Fiscal</a></li>
+                <li class="icono-financiero"><a href="paginas/servicios3_financiero.html">Asesoría Financiera</a></li>
+                <li class="icono-contable"><a href="paginas/servicios2_contable.html">Asesoría Contable</a></li>
+                <li class="icono-laboral"><a href="paginas/servicios6_laboral.html">Asesoría Laboral</a></li>
+                <li class="icono-otros"><a href="paginas/servicios4_mercantil.html">Otros Servicios</a></li>
             </ul>
         </section>
     </main>
