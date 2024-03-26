@@ -26,11 +26,13 @@ button {
   font-size: 14px;
 }
 
+
+
 main {
-  background-image: url(../imagenes/fondo_horizonte.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; 
+    font-family: Verdana, sans-serif;
 }
 
 body {
@@ -38,6 +40,7 @@ body {
   min-height: 100vh; /* Establece una altura mínima del 100% del viewport height */
   color: #1b1a17;
   margin: 0;
+  text-align: center;
 }
 
 header {
@@ -50,7 +53,7 @@ header {
   top: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 788px) {
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -63,7 +66,7 @@ header {
   margin-top: 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 788px) {
   .logo-menu {
     margin-left: 12px;
   }
@@ -83,7 +86,7 @@ header {
   max-width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 788px) {
   .toggle-menu {
     display: none;
   }
@@ -104,7 +107,7 @@ header {
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 788px) {
   .main-menu {
     display: flex;
     flex-direction: row;

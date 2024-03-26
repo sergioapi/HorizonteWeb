@@ -251,6 +251,9 @@
 main {
     background-image: none;
     background-color: rgba(255, 210, 113, 0.244);
+    flex-grow: 1; /* Esto permite que el elemento se expanda y ocupe todo el espacio disponible */
+    display: flex;
+    flex-direction: column; 
 }
 
 header {

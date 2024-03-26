@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const galleryContainer = document.querySelector('.gallery-container');
-    const galleryImages = document.querySelectorAll('.gallery-image');
+$(document).ready(function() {
+    const galleryContainer = $('.gallery-container');
+    const galleryImages = $('.gallery-image');
     const totalImages = galleryImages.length;
-    const imageWidth = galleryImages[0].offsetWidth;
+    const imageWidth = galleryImages.eq(0).outerWidth();
     const transitionDuration = 2000; // Duración de la transición en milisegundos
     const intervalDuration = 1500; // Intervalo entre transiciones en milisegundos
     let currentIndex = 0;
@@ -13,20 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
         currentIndex = (currentIndex + 1) % totalImages;
 
         // Añadir una nueva imagen por la derecha
-        const newImage = galleryImages[currentIndex].cloneNode(true);
-        newImage.style.left = `${totalImages * imageWidth}px`; // Posicionar la nueva imagen fuera de la vista
-        galleryContainer.appendChild(newImage);
+        const newImage = galleryImages.eq(currentIndex).clone();
+        newImage.css('left', `${totalImages * imageWidth}px`); // Posicionar la nueva imagen fuera de la vista
+        galleryContainer.append(newImage);
 
         // Mover todas las imágenes hacia la izquierda
-        for (let i = 0; i < totalImages; i++) {
-            const currentPosition = parseInt(galleryImages[i].style.left) || 0;
-            galleryImages[i].style.transition = `left ${transitionDuration / 1000}s ease-in-out`;
-            galleryImages[i].style.left = `${currentPosition - imageWidth}px`;
-        }
+        galleryImages.each(function(index) {
+            const currentPosition = parseInt($(this).css('left')) || 0;
+            $(this).css('transition', `left ${transitionDuration / 1000}s ease-in-out`);
+            $(this).css('left', `${currentPosition - imageWidth}px`);
+        });
 
         // Eliminar la primera imagen de la cola
         setTimeout(() => {
-            galleryContainer.removeChild(galleryContainer.firstElementChild);
+            galleryContainer.children().first().remove();
         }, transitionDuration);
     }
 

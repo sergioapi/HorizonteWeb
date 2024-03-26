@@ -104,7 +104,7 @@ input[type="date"] {
 }
 
 /* Media query para reorganizar los elementos cuando el ancho de la pantalla sea menor */
-@media (max-width: 750px) {
+@media (max-width: 900px) {
     .form-mid-row {
         flex-wrap: wrap; 
         width: 100%;
@@ -141,4 +141,15 @@ main {
 
 h3 {
     color: #622c0c
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0; /* Elimina el margen de la lista para evitar espacios adicionales */
+}
+
+ul li {
+    margin-right: 10px;
 }
