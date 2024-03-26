@@ -6,14 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes | Horizonte Empresarial</title>
     <link rel="stylesheet" href="../assets/css/general.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <style>
+        /* Establecer el fondo blanco */
+        body {
+            background-color: #ffffff;
+        }
+
+        /* Eliminar la imagen de fondo */
+        main {
+            background-image: none;
+        }
+
+        /* Estilo para la imagen de cabecera */
+        .header-image {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* Estilo para el contenedor de la galería */
+        .gallery-container {
+            width: 100%;
+            overflow-x: hidden; /* Permitir desplazamiento horizontal */
+            white-space: nowrap; /* Evitar saltos de línea */
+            padding: 30px;
+            overflow: hidden;
+        }
+
+        /* Estilo para las imágenes de la galería */
+        .gallery-image {
+            display: inline-block; /* Mostrar las imágenes en línea */
+            margin-right: 120px; /* Espacio entre las imágenes */
+        }
+
+        /* Estilo para las imágenes */
+        .gallery-image img {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-width: 100%; /* Establece el ancho máximo al 100% del contenedor padre */
+            max-height: 110%; /* Establece la altura máxima al 100% del contenedor padre */
+            height: auto; /* Permite que la altura se ajuste automáticamente para mantener la relación de aspecto */
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <!-- Añadir width y height de la imagen -->
-        <a href="../index.html">
-            <figure><img src="../assets/imagenes/logoHEb1.png" alt="Logo Horizonte Empresarial" /></figure>
-        </a>
+        <a href="../index.html"> <figure><img src="../assets/imagenes/logoHEb1.png" alt="Logo Horizonte Empresarial" /></figure> </a>
         <nav class="menu">
             <ul>
                 <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
@@ -24,53 +64,49 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <figure><img src="../assets/imagenes/" alt="Imagen de fondo" /></figure>
-        </section>
-        <section>
-            <ul>
-                <li>
-                    <figure><img src="../assets/imagenes/logoCliente1.png" alt="Logo cliente" /></figure>
-                </li>
-                <li>
-                    <figure><img src="../assets/imagenes/logoMduse.png" alt="Logo cliente" /></figure>
-                </li>
-                <li>
-                    <figure><img src="../assets/imagenes/logoLupa.png" alt="Logo cliente" /></figure>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <ul>
-                <li>
-                    <figure><img src="../assets/imagenes/icono_cliente.png" alt="Icono cliente" /></figure>
-                    <h5>CLIENTE 1</h5>
-                    <figure><img src="../assets/imagenes/icono_estrellas.png" alt="Icono estrellas" /></figure>
-                    <p>Texto de la reseña</p>
-                </li>
-                <li>
-                    <figure><img src="../assets/imagenes/icono_cliente.png" alt="Icono cliente" /></figure>
-                    <h5>CLIENTE 2</h5>
-                    <figure><img src="../assets/imagenes/icono_estrellas.png" alt="Icono estrellas" /></figure>
-                    <p>Texto de la reseña</p>
-                </li>
-                <li>
-                    <figure><img src="../assets/imagenes/icono_cliente.png" alt="Icono cliente" /></figure>
-                    <h5>CLIENTE 3</h5>
-                    <figure><img src="../assets/imagenes/icono_estrellas.png" alt="Icono estrellas" /></figure>
-                    <p>Texto de la reseña</p>
-                </li>
-                <li>
-                    <figure><img src="../assets/imagenes/icono_cliente.png" alt="Icono cliente" /></figure>
-                    <h5>CLIENTE 4</h5>
-                    <figure><img src="../assets/imagenes/icono_estrellas.png" alt="Icono estrellas" /></figure>
-                    <p>Texto de la reseña</p>
-                </li>
-            </ul>
-            <a href="contacto.html"><button>CONTÁCTANOS</button> </a>
-        </section>
+
+    <!-- Agregar la imagen de cabecera -->
+    <img src="../assets/imagenes/clientes1.jpg" alt="Imagen de cabecera" class="header-image">
+
+    <main class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Contenedor de la galería -->
+                    <div class="gallery-container">
+                        <!-- Imágenes de la galería -->
+                        <div class="gallery-image">
+                            <img src="../assets/imagenes/c1.png" alt="Imagen 1">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="../assets/imagenes/c2.png" alt="Imagen 2">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="../assets/imagenes/c3.png" alt="Imagen 3">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="../assets/imagenes/c4.png" alt="Imagen 4">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="../assets/imagenes/c5.png" alt="Imagen 5">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="../assets/imagenes/c6.png" alt="Imagen 6">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="../assets/imagenes/c7.png" alt="Imagen 7">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="../assets/imagenes/c8.png" alt="Imagen 8">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="../assets/imagenes/c9.png" alt="Imagen 9">
+                        </div>
+                        <!-- Puedes agregar más imágenes aquí -->
+                    </div>
+                </div>
+            </div>
     </main>
+
     <footer>
         <div class="footer-logo">
             <!-- Añadir width y height de la imagen -->
@@ -86,6 +122,9 @@
             </ul>
         </div>
     </footer>
+
+    <script src="../assets/js/clientes_galeria.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
