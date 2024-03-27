@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios | Horizonte Empresarial</title>
+  <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <link rel="stylesheet" href="../assets/css/general.css" />
+  <link rel="stylesheet" href="../assets/css/grid.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  
+  <style>
+    header {
+      z-index: 20;
+    }
+
+    .carousel-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Color del velo y su opacidad */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 4em; /* Ancho deseado */
+      height: 4em; /* Alto deseado */
+    }
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <div class="logo-menu">
+      <a href="../index.html" class="logo-menu__link">
+        <img src="../assets/imagenes/logoHEb1.png" alt="Logo Horizonte Empresarial" />
+      </a>
+    </div>
+    <div id="toggle-menu" class="toggle-menu">
+      <img src="../assets/imagenes/burger-icon.png" alt="" />
+    </div>
+    <ul id="main-menu" class="main-menu">
+      <li class="main-menu__item">
+        <a href="nosotros.html" class="main-menu__link">SOBRE NOSOTROS</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="servicios.html" class="main-menu__link">SERVICIOS</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="clientes.html" class="main-menu__link">CLIENTES</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="contacto.html" class="main-menu__link">CONTACTO</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="blog.html" class="main-menu__link">BLOG</a>
+      </li>
+    </ul>
+  </header>
+  <script src="../assets/js/menu.js"></script>
+
+  <main>
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" id="slide1">
+            <img src="../assets/imagenes/servicios/fiscal.jpg" class="d-block w-100" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Asesoría Fiscal</h4>
+              <p> Declaraciones y liquidaciones de impuestos y atención en sucesión empresarial.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="slide2">
+            <img src="../assets/imagenes/servicios/juridico.jpg" class="d-block w-100" alt="Slide 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Asesoría Jurídica</h4>
+              <p> Tramitación de procesos civiles y dirección procesal y defensa en procedimientos judiciales.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="slide3">
+            <img src="../assets/imagenes/servicios/financiero.jpg" class="d-block w-100" alt="Slide 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Asesoría Financiera</h4>
+              <p> Obtención de financiación, tramitación de subvenciones y elaboración de presupuestos e informes financieros.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="slide4">
+            <img src="../assets/imagenes/servicios/mercantil.jpg" class="d-block w-100" alt="Slide 4">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Asesoría Mercantil</h4>
+              <p> Constitución de sociedades, compraventa de empresas y elaboración y revisión de contratos.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="slide5">
+            <img src="../assets/imagenes/servicios/contable.jpg" class="d-block w-100" alt="Slide 5">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Asesoría Contable</h4>
+              <p> Confección y realización de los asientos contables y presentación de cuentas anuales.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="slide6">
+            <img src="../assets/imagenes/servicios/laboral.jpg" class="d-block w-100" alt="Slide 6">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Asesoría Laboral</h4>
+              <p> Nóminas, seguros sociales, pensiones y jubilaciones.</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+
+    <section>
+      <h1>¿Quieres calcular tu presupuesto?</h1>
+      <a href="#calculadora"><button>ADELANTE</button></a>
+    </section>
+    <section id="calculadora">
+      <h2>¡Te ayudamos!</h2>
+      <form>
+        <fieldset>
+          <legend>Servicios requeridos</legend>
+          <input type="checkbox" /> Asesoría Fiscal<br />
+          <input type="checkbox" /> Asesoría Financiera<br />
+          <input type="checkbox" /> Asesoría Contable<br />
+          <input type="checkbox" /> Asesoría Laboral<br />
+          <input type="checkbox" /> Otros servicios
+        </fieldset>
+        <fieldset>
+          <legend>Localización</legend>
+          <input
+            type="text"
+            list="ciudades"
+            name="txt_loc"
+            placeholder="Introduzca su ciudad..."
+          />
+          <datalist id="ciudades">
+            <option value="A Coruña"></option>
+            <option value="Ferrol"></option>
+            <option value="Santiago de Compostela"></option>
+            <option value="Pontevedra"></option>
+            <option value="Vigo"></option>
+            <option value="Lugo"></option>
+            <option value="Ourense"></option>
+          </datalist>
+        </fieldset>
+        <fieldset>
+          <legend>Tipo de cliente</legend>
+          <select name="lista_tipo_cliente" size="1">
+            <option value="" selected disabled>
+              Seleccione una opción...
+            </option>
+            <option value="empresa">Empresa</option>
+            <option value="autonomo">Autónomo</option>
+            <option value="particular">Particular</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Frecuencia de los servicios</legend>
+          <input type="radio" name="mensual" /> Mensual <br />
+          <input type="radio" name="trimestral" /> Trimestral <br />
+          <input type="radio" name="anual" /> Anual <br />
+        </fieldset>
+        <input type="submit" name="enviar_form" value="Enviar" />
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-logo">
+      <figure>
+        <img src="../assets/imagenes/logoHEb2.png" alt="Logo Horizonte Empresarial" />
+      </figure>
+   
+
+      </div>
+      <div class="footer-content">
+        <p>
+          &copy; 2024 Horizonte Empresarial S.L. Todos los derechos reservados
+        </p>
+        <ul>
+          <!-- Añadir enlaces a otras paginas -->
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../assets/js/calculadora.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
