@@ -24,6 +24,10 @@
             object-fit: cover;
         }
 
+        header {
+          z-index: 20;
+        }
+
         /* Estilo para el contenedor de la galería */
         .gallery-container {
             width: 100%;
@@ -47,6 +51,26 @@
             max-height: 110%; /* Establece la altura máxima al 100% del contenedor padre */
             height: auto; /* Permite que la altura se ajuste automáticamente para mantener la relación de aspecto */
         }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            padding: 10px;
+            padding-top: 80px;
+        }
+
+        .position-relative:hover .overlay {
+            opacity: 1;
+        }
+
     </style>
 </head>
 <body>
@@ -124,6 +148,43 @@
                     </div>
                 </div>
             </div>
+
+            <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-top: 60px; margin-bottom: 40px; font-weight: bold;">Vuestra opinión cuenta</h1>
+            <div class="container text-center">
+              <div class="row" style="margin-top: 80px; margin-bottom: 100px;">
+                  <div class="col-md-3">
+                      <div class="position-relative">
+                          <img src="../assets/imagenes/perfiles/perfil1.png" alt="Reseña 1" class="img-fluid">
+                          <div class="overlay">Muy recomendable, un gran equipo de profesionales, serios, comprometidos a la par que eficientes.
+                            Totalmente satisfecha de trabajar con ellos.</div>
+                      </div>
+                      <img src="../assets/imagenes/perfiles/5estrellas.png" alt="Reseña 1" class="img-fluid">
+                  </div>
+                  <div class="col-md-3">
+                      <div class="position-relative">
+                          <img src="../assets/imagenes/perfiles/perfil2.png" alt="Reseña 2" class="img-fluid">
+                          <div class="overlay">Texto descriptivo de la reseña 2</div>
+                      </div>
+                      <img src="../assets/imagenes/perfiles/5estrellas.png" alt="Reseña 2" class="img-fluid">
+                  </div>
+                  <div class="col-md-3">
+                      <div class="position-relative">
+                          <img src="../assets/imagenes/perfiles/perfil3.png" alt="Reseña 3" class="img-fluid">
+                          <div class="overlay">Texto descriptivo de la reseña 3</div>
+                      </div>
+                      <img src="../assets/imagenes/perfiles/4estrellas.png" alt="Reseña 3" class="img-fluid">
+                  </div>
+                  <div class="col-md-3">
+                      <div class="position-relative">
+                          <img src="../assets/imagenes/perfiles/perfil4.png" alt="Reseña 4" class="img-fluid">
+                          <div class="overlay">Texto descriptivo de la reseña 4</div>
+                      </div>
+                      <img src="../assets/imagenes/perfiles/5estrellas.png" alt="Reseña 4" class="img-fluid">
+                  </div>
+              </div>
+          </div>
+          
+
     </main>
 
     <footer>
