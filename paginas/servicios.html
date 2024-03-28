@@ -6,8 +6,8 @@
   <title>Servicios | Horizonte Empresarial</title>
   <link rel="stylesheet" href="../assets/css/normalize.css" />
   <link rel="stylesheet" href="../assets/css/general.css" />
-  <link rel="stylesheet" href="../assets/css/grid.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/grid.css" />
   
   <style>
     header {
@@ -138,59 +138,68 @@
 
 
 
-    <section>
-      <h1>¿Quieres calcular tu presupuesto?</h1>
-      <a href="#calculadora"><button>ADELANTE</button></a>
-    </section>
-    <section id="calculadora">
-      <h2>¡Te ayudamos!</h2>
-      <form>
-        <fieldset>
-          <legend>Servicios requeridos</legend>
-          <input type="checkbox" /> Asesoría Fiscal<br />
-          <input type="checkbox" /> Asesoría Financiera<br />
-          <input type="checkbox" /> Asesoría Contable<br />
-          <input type="checkbox" /> Asesoría Laboral<br />
-          <input type="checkbox" /> Otros servicios
-        </fieldset>
-        <fieldset>
-          <legend>Localización</legend>
-          <input
-            type="text"
-            list="ciudades"
-            name="txt_loc"
-            placeholder="Introduzca su ciudad..."
-          />
-          <datalist id="ciudades">
-            <option value="A Coruña"></option>
-            <option value="Ferrol"></option>
-            <option value="Santiago de Compostela"></option>
-            <option value="Pontevedra"></option>
-            <option value="Vigo"></option>
-            <option value="Lugo"></option>
-            <option value="Ourense"></option>
-          </datalist>
-        </fieldset>
-        <fieldset>
-          <legend>Tipo de cliente</legend>
-          <select name="lista_tipo_cliente" size="1">
-            <option value="" selected disabled>
-              Seleccione una opción...
-            </option>
-            <option value="empresa">Empresa</option>
-            <option value="autonomo">Autónomo</option>
-            <option value="particular">Particular</option>
-          </select>
-        </fieldset>
-        <fieldset>
-          <legend>Frecuencia de los servicios</legend>
-          <input type="radio" name="mensual" /> Mensual <br />
-          <input type="radio" name="trimestral" /> Trimestral <br />
-          <input type="radio" name="anual" /> Anual <br />
-        </fieldset>
-        <input type="submit" name="enviar_form" value="Enviar" />
-      </form>
-    </section>
+    <div class="grid-container">
+      <section>
+        <h1>¿Quieres calcular tu presupuesto?</h1>
+        <div id="adelante"><a href="#calculadora"><button>ADELANTE</button></a></div>
+      </section>
+      <section>
+        <h2>¡Te ayudamos!</h2>
+        <form id="calculadora">
+          <fieldset class="item1">
+            <legend>Servicios requeridos</legend>
+            <input type="checkbox" /> Asesoría Fiscal<br />
+            <input type="checkbox" /> Asesoría Financiera<br />
+            <input type="checkbox" /> Asesoría Contable<br />
+            <input type="checkbox" /> Asesoría Laboral<br />
+            <input type="checkbox" /> Otros servicios
+          </fieldset>
+          <fieldset class="item2">
+            <legend>Localización</legend>
+            <input
+              type="text"
+              list="ciudades"
+              name="txt_loc"
+              placeholder="Introduzca su ciudad..."
+            />
+            <datalist id="ciudades">
+              <option value="A Coruña"></option>
+              <option value="Ferrol"></option>
+              <option value="Santiago de Compostela"></option>
+              <option value="Pontevedra"></option>
+              <option value="Vigo"></option>
+              <option value="Lugo"></option>
+              <option value="Ourense"></option>
+            </datalist>
+            <input
+              type="text"
+              name="txt_loc"
+              placeholder="Introduzca su CP..."
+            />
+          </fieldset>
+          <fieldset class="item3">
+            <legend>Frecuencia de los servicios</legend>
+            <input type="radio" name="frecuencia" value="mensual" /> Mensual <br />
+            <input type="radio" name="frecuencia" value="trimestral" /> Trimestral <br />
+            <input type="radio" name="frecuencia" value="anual" /> Anual <br />
+          </fieldset>
+          <fieldset class="item4">
+            <legend>Tipo de cliente</legend>
+            <select name="lista_tipo_cliente" size="1">
+              <option value="" selected disabled>
+                Seleccione una opción...
+              </option>
+              <option value="empresa">Empresa</option>
+              <option value="autonomo">Autónomo</option>
+              <option value="particular">Particular</option>
+            </select>
+          </fieldset>
+          <input type="submit" name="enviar_form" value="Enviar" class="submit"/>
+        </form>
+      </section>
+    </div>
+
+
   </main>
   <footer>
     <div class="footer-logo">

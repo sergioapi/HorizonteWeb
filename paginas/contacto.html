@@ -6,6 +6,7 @@
     <title>Contacto | Horizonte Empresarial</title>
     <link rel="stylesheet" href="../assets/css/normalize.css" />
     <link rel="stylesheet" href="../assets/css/general.css" />
+    <link rel="stylesheet" href="../assets/css/multicol.css" />
   </head>
 
   <body>
@@ -43,22 +44,21 @@
     </header>
     <script src="../assets/js/menu.js"></script>
     <main>
+      <h1>Estamos aquí para ayudarte</h1>
       <section>
-        <h1>Estamos aquí para ayudarte</h1>
-        <section>
-          <!-- <figure><img src="../assets/imagenes/mapa_contacto.png" alt="Mapa"/></figure> -->
+        <section id="mapa">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.003910795019!2d-8.547322724342932!3d42.87276160255736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe3f192975d7%3A0x2ae73687fa75776d!2sR%C3%BAa%20do%20H%C3%B3rreo%2C%20Santiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1708019586249!5m2!1ses!2ses"
             width="600"
             height="450"
-            style="border: 0"
+            style="border: 2px solid orange; border-radius: 10px;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </section>
         <section>
-          <ul>
+          <ul class="contenedor">
             <li>
               <figure>
                 <img
@@ -66,7 +66,7 @@
                   alt="Icono ubicación"
                 />
               </figure>
-              <p>Oficina<br />Rúa do Hórreo<br />17003 - A Coruña</p>
+              <p>Rúa do Hórreo<br />17003 - A Coruña</p>
             </li>
             <li>
               <figure>
@@ -75,8 +75,10 @@
                   alt="Icono reloj"
                 />
               </figure>
-              <p>Lunes a jueves de 8 a 16 h<br />Viernes de 8 a 14 h</p>
+              <p>L - J de 8 a 16 h<br />Viernes de 8 a 14 h</p>
             </li>
+          </ul>
+            <ul class="contenedor">
             <li>
               <figure>
                 <img
