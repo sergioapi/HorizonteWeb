@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <personal>
-<empleado>
+    <empleado id="01">
+        <nombre>Pablo Montero</nombre>
+        <estudios>Economista y Máster en Fiscalidad y Tributación</estudios>
+        <departamento>Financiero</departamento>
+        <email>pablo.montero@horizonteempresarial.com</email>
+        <ciudad>Madrid</ciudad>
+        <tlf>+34 91 514 52 00</tlf>
+        <descripcion>Especializado en operaciones de MA, contratación comercial y reestructuraciones societarias. Ha participado en operaciones de fusión o adquisición muy relevantes de los sectores bancario, asegurador, editorial y energético. Su trayectoria profesional se distingue por su capacidad para identificar oportunidades estratégicas y ejecutar transacciones complejas de manera efectiva. Imagen empleado</descripcion>
+    </empleado>
+    <empleado id="02">
+        <nombre>Rosa Carreira</nombre>
+        <estudios>Licenciada en Contabilidad y Finanzas</estudios>
+        <departamento>Fiscal</departamento>
+        <email>rosa.carreira@horizontempresarial.com</email>
+        <ciudad>Madrid</ciudad>
+        <tlf>+34 91 345 12 77</tlf>
+        <descripcion>Más de 20 años de experiencia asesorando a clientes nacionales e internacionales, en particular, a fondos extranjeros y entidades financieras en operaciones de financiación sindicada. Además, combina su experiencia fiscal y regulatoria para el diseño de productos aseguradores, esquemas retributivos de previsión social o la revisión de estructuras de distribución de seguros.</descripcion>
+    </empleado>
+    <empleado id="03">
+        <nombre>Dolores Alcaraz</nombre>
+        <estudios>Abogada especialista en Derecho Inmobiliario</estudios>
+        <departamento>Jurídico</departamento>
+        <email>dolores.alcaraz@horizontempresarial.com</email>
+        <ciudad>Bilbao</ciudad>
+        <tlf>+34 94 470 06 99</tlf>
+        <descripcion>Graduada en Derecho y Administración y Dirección de Empresas por la Universidad Pontificia Comillas de Madrid (ICADE E-3). Ha sido adjunta de docencia de la Universidad de Lima y la Universidad del Pacífico, y es autora de publicaciones académicas sobre Derecho de la Competencia en diversas revistas jurídicas y portales de investigación.</descripcion>
+    </empleado>
+    <empleado id="04">
+        <nombre>Javier Agudo</nombre>
+        <estudios>Abogado mercantil especializado en fusiones y adquisiciones</estudios>
+        <departamento>Mercantil</departamento>
+        <email>javier.aguado@horizontempresarial.com</email>
+        <ciudad>San Sebastián</ciudad>
+        <tlf>+34 943 26 78 20</tlf>
+        <descripcion>Realizó el máster de acceso a la profesión de abogado en la Universidad Complutense de Madrid, y el máster en práctica mercantil en el Centro de Estudios Garrigues. Tiene amplia experiencia en el sector inmobiliario, asesorando a empresas en todo tipo de adquisición de activos, así como en la gestión de carteras inmobiliarias.</descripcion>
+    </empleado>
 </personal>
