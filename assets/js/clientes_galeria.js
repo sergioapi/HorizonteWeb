@@ -1,40 +1,34 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-undef */
-$(document).ready(() => {
-  const galleryContainer = $('.gallery-container');
-  const galleryImages = $('.gallery-image');
-  const totalImages = galleryImages.length;
-  const imageWidth = galleryImages.eq(0).outerWidth();
-  const transitionDuration = 2000; // Duración de la transición en milisegundos
-  const intervalDuration = 1500; // Intervalo entre transiciones en milisegundos
+$(document).ready(function() {
+  const galleryWrapper = $('.gallery-wrapper');
+  const galleryImages = $('.gallery-image'); // Obtener todas las imágenes
+  const imageWidth = galleryImages.eq(0).outerWidth(); // Obtener el ancho de una imagen
+  const wrapperWidth = galleryWrapper.width(); // Obtener el ancho del contenedor
+  const totalImages = galleryImages.length; // Obtener el número total de imágenes
+  const cloneCount = Math.ceil(wrapperWidth / imageWidth) + 1; // Calcular la cantidad de clonaciones necesarias para llenar el contenedor
   let currentIndex = 0;
+
+  // Clonar las imágenes y agregarlas al final del contenedor
+  for (let i = 0; i < cloneCount; i++) {
+    galleryImages.clone().appendTo(galleryWrapper);
+  }
 
   // Función para mover las imágenes
   function moveImages() {
-    // Calcular el índice de la próxima imagen a mostrar
-    currentIndex = (currentIndex + 1) % totalImages;
+    currentIndex++;
 
-    // Añadir una nueva imagen por la derecha
-    const newImage = galleryImages.eq(currentIndex).clone();
-    newImage.css('left', `${totalImages * imageWidth}px`); // Posicionar la nueva imagen fuera de la vista
-    galleryContainer.append(newImage);
+    // Calcular la posición de desplazamiento
+    const newPosition = -currentIndex * totalImages * imageWidth;
 
-    // Mover todas las imágenes hacia la izquierda
-    galleryImages.each(() => {
-      const currentPosition = parseInt($(this).css('left'), 10) || 0;
-      $(this).css(
-        'transition',
-        `left ${transitionDuration / 1000}s ease-in-out`,
-      );
-      $(this).css('left', `${currentPosition - imageWidth}px`);
+    // Animar el desplazamiento
+    galleryWrapper.animate({ left: newPosition }, 1000, 'linear', function() {
+      // Si se alcanza el final del conjunto clonado, restablecer el índice y la posición
+      if (currentIndex === totalImages) {
+        currentIndex = 0;
+        galleryWrapper.css('left', 0);
+      }
     });
-
-    // Eliminar la primera imagen de la cola
-    setTimeout(() => {
-      galleryContainer.children().first().remove();
-    }, transitionDuration);
   }
 
-  // Iniciar el movimiento de las imágenes cada intervalo de tiempo
-  setInterval(moveImages, intervalDuration);
+  // Iniciar el movimiento de las imágenes
+  setInterval(moveImages, 2500);
 });

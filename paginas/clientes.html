@@ -33,14 +33,31 @@
             width: 100%;
             overflow-x: hidden; /* Permitir desplazamiento horizontal */
             white-space: nowrap; /* Evitar saltos de línea */
+            position: relative;
             padding: 30px;
             overflow: hidden;
         }
 
+        .gallery-wrapper {
+          display: flex;
+          animation: slide 20s linear infinite; /* Definir animación para el desplazamiento continuo */
+        }
+
+        .gallery-image {
+          flex: 0 0 auto;
+        }
         /* Estilo para las imágenes de la galería */
         .gallery-image {
-            display: inline-block; /* Mostrar las imágenes en línea */
             margin-right: 120px; /* Espacio entre las imágenes */
+        }
+
+        @keyframes slide {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-100%); /* Desplazar las imágenes hacia la izquierda */
+          }
         }
 
         /* Estilo para las imágenes */
@@ -67,11 +84,29 @@
             padding-top: 80px;
         }
 
+        .overlay-text {
+            overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido excede el espacio */
+            max-height: 100%; /* Establece una altura máxima para evitar que el contenido se desborde */
+            overflow-x: hidden;
+        }
+
         .position-relative:hover .overlay {
             opacity: 1;
         }
 
+        .resenas {
+          background-image: url(../assets/imagenes/fondo-res.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 20px;
+        }
+
+        .container-fluid {
+          padding: 0;
+        }
+
     </style>
+
 </head>
 <body>
     <header>
@@ -111,79 +146,91 @@
     <!-- Agregar la imagen de cabecera -->
     <img src="../assets/imagenes/clientes1.jpg" alt="Imagen de cabecera" class="header-image">
 
-    <main class="container">
+    <main class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <!-- Contenedor de la galería -->
                     <div class="gallery-container">
                         <!-- Imágenes de la galería -->
+                        <div class="gallery-wrapper">
                         <div class="gallery-image">
-                            <img src="../assets/imagenes/c1.png" alt="Imagen 1">
+                            <img src="../assets/imagenes/marcas/c1.png" alt="Imagen 1">
                         </div>
                         <div class="gallery-image">
-                            <img src="../assets/imagenes/c2.png" alt="Imagen 2">
+                            <img src="../assets/imagenes/marcas/c2.png" alt="Imagen 2">
                         </div>
                         <div class="gallery-image">
-                            <img src="../assets/imagenes/c3.png" alt="Imagen 3">
+                            <img src="../assets/imagenes/marcas/c3.png" alt="Imagen 3">
                         </div>
                         <div class="gallery-image">
-                            <img src="../assets/imagenes/c4.png" alt="Imagen 4">
+                            <img src="../assets/imagenes/marcas/c4.png" alt="Imagen 4">
                         </div>
                         <div class="gallery-image">
-                            <img src="../assets/imagenes/c5.png" alt="Imagen 5">
+                            <img src="../assets/imagenes/marcas/c5.png" alt="Imagen 5">
                         </div>
                         <div class="gallery-image">
-                            <img src="../assets/imagenes/c6.png" alt="Imagen 6">
+                            <img src="../assets/imagenes/marcas/c6.png" alt="Imagen 6">
                         </div>
                         <div class="gallery-image">
-                            <img src="../assets/imagenes/c7.png" alt="Imagen 7">
+                            <img src="../assets/imagenes/marcas/c7.png" alt="Imagen 7">
                         </div>
                         <div class="gallery-image">
-                            <img src="../assets/imagenes/c8.png" alt="Imagen 8">
+                            <img src="../assets/imagenes/marcas/c8.png" alt="Imagen 8">
                         </div>
                         <div class="gallery-image">
-                            <img src="../assets/imagenes/c9.png" alt="Imagen 9">
+                            <img src="../assets/imagenes/marcas/c9.png" alt="Imagen 9">
+                        </div>
+                        <div class="gallery-image">
+                          <img src="../assets/imagenes/marcas/c10.png" alt="Imagen 10">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="../assets/imagenes/marcas/c11.png" alt="Imagen 11">
+                        </div>
+                        <div class="gallery-image">
+                          <img src="../assets/imagenes/marcas/c12.png" alt="Imagen 12">
                         </div>
                         <!-- Puedes agregar más imágenes aquí -->
+                      </div>
                     </div>
                 </div>
             </div>
-
+            
+            <div class="resenas">
             <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-top: 60px; margin-bottom: 40px; font-weight: bold;">Vuestra opinión cuenta</h1>
             <div class="container text-center">
               <div class="row" style="margin-top: 80px; margin-bottom: 100px;">
-                  <div class="col-md-3">
+                  <div class="col-6 col-md-3">
                       <div class="position-relative">
-                          <img src="../assets/imagenes/perfiles/perfil1.png" alt="Reseña 1" class="img-fluid">
-                          <div class="overlay">Muy recomendable, un gran equipo de profesionales, serios, comprometidos a la par que eficientes.
-                            Totalmente satisfecha de trabajar con ellos.</div>
+                          <img src="../assets/imagenes/resenas/resena1.png" alt="Reseña 1" class="img-fluid">
+                          <div class="overlay"><p class="overlay-text">Muy recomendable, un gran equipo de profesionales, serios, comprometidos a la par que eficientes.
+                            Totalmente satisfecha de trabajar con ellos.</p></div>
                       </div>
-                      <img src="../assets/imagenes/perfiles/5estrellas.png" alt="Reseña 1" class="img-fluid">
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-6 col-md-3">
                       <div class="position-relative">
-                          <img src="../assets/imagenes/perfiles/perfil2.png" alt="Reseña 2" class="img-fluid">
-                          <div class="overlay">Texto descriptivo de la reseña 2</div>
+                          <img src="../assets/imagenes/resenas/resena2.png" alt="Reseña 2" class="img-fluid">
+                          <div class="overlay"><p class="overlay-text">Servicio muy profesional, trato muy agradable y un conocimiento extenso para resolver cualquier 
+                            asunto laboral o empresarial. La recomiento mucho.</p></div>
                       </div>
-                      <img src="../assets/imagenes/perfiles/5estrellas.png" alt="Reseña 2" class="img-fluid">
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-6 col-md-3">
                       <div class="position-relative">
-                          <img src="../assets/imagenes/perfiles/perfil3.png" alt="Reseña 3" class="img-fluid">
-                          <div class="overlay">Texto descriptivo de la reseña 3</div>
+                          <img src="../assets/imagenes/resenas/resena3.png" alt="Reseña 3" class="img-fluid">
+                          <div class="overlay"><p class="overlay-text">Soy autónomo y me han ayudado a resolver todas mis dudas a lo largo de cinco años. Siempre que necesito
+                             ayuda están disponibles. La recomiendo.</p></div>
                       </div>
-                      <img src="../assets/imagenes/perfiles/4estrellas.png" alt="Reseña 3" class="img-fluid">
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-6 col-md-3">
                       <div class="position-relative">
-                          <img src="../assets/imagenes/perfiles/perfil4.png" alt="Reseña 4" class="img-fluid">
-                          <div class="overlay">Texto descriptivo de la reseña 4</div>
+                          <img src="../assets/imagenes/resenas/resena4.png" alt="Reseña 4" class="img-fluid">
+                          <div class="overlay"><p class="overlay-text">Servicio impecable. Muy positiva mi experiencia en cuanto a la tramitación de herencias. Y lo más importante
+                             la amabilidad de sus trabajadores.</p></div>
                       </div>
-                      <img src="../assets/imagenes/perfiles/5estrellas.png" alt="Reseña 4" class="img-fluid">
                   </div>
               </div>
           </div>
-          
+        </div>
+</div>   
 
     </main>
 
@@ -213,6 +260,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/clientes_galeria.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+
+  </body>
 
 </html>

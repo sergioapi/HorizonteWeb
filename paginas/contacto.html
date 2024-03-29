@@ -57,7 +57,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </section>
-        <section>
+        <section id="datos">
           <ul class="contenedor">
             <li>
               <figure>
@@ -100,51 +100,37 @@
           </ul>
         </section>
       </section>
-      <section>
-        <h2>¿Qué necesitas?</h2>
 
-        <form
-          name="Contacto"
-          action=""
-          method="post"
-          enctype="multipart/form-data"
-        >
-          <fieldset>
-            <label for="txName">Nombre </label>
-            <input
-              id="txName"
-              type="text"
-              name="nombre"
-              placeholder="Escribe aquí tu nombre..."
-            />
-
-            <label for="txMail">Correo electrónico </label>
-            <input
-              id="txMail"
-              type="text"
-              name="correo"
-              placeholder="Escribe aquí tu e-mail..."
-            />
-
-            <label for="taMsj">Mensaje</label>
-            <textarea
-              id="taMsj"
-              name="mensaje"
-              rows="4"
-              cols="50"
-              placeholder="Escribe aquí tu mensaje..."
-            ></textarea>
-
-            <input
-              type="file"
-              name="arch1"
-              size="50"
-              value="Adjuntar archivo"
-            />
-            <input type="submit" name="env1" value="Enviar" />
-          </fieldset>
-        </form>
-      </section>
+      <h2>¿Qué necesitas?</h2>
+      <section class="seccion-dos">
+    
+        <form class="formulario" name="Contacto" action="" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+              <div style="display: flex;">
+                  <div style="flex: 1;">
+                      <label for="txName">Nombre</label>
+                      <input id="txName" type="text" name="nombre" placeholder="Escribe aquí tu nombre...">
+                  </div>
+                  <div style="flex: 1; margin-left: 10px;">
+                      <label for="txMail">Correo electrónico</label>
+                      <input id="txMail" type="text" name="correo" placeholder="Escribe aquí tu e-mail...">
+                  </div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="taMsj">Mensaje</label>
+              <textarea id="taMsj" name="mensaje" rows="4" placeholder="Escribe aquí tu mensaje..."></textarea>
+          </div>
+          <div class="form-group">
+              <label for="fileInput">Adjuntar archivo</label>
+              <input type="file" id="fileInput" name="arch1" size="50" value="Adjuntar archivo">
+          </div>
+          <div class="form-group">
+              <input type="submit" name="env1" value="Enviar">
+          </div>
+      </form>
+    </section>
+    
     </main>
     <footer>
       <div class="footer-logo">
