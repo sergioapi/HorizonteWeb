@@ -1,261 +1,267 @@
 .texto-tecleado {
-    overflow: hidden; /* Oculta el texto que se sale del contenedor */
-    left: 50%; /* Centra el texto horizontalmente */
-    transform: translateX(-50%); 
-    padding: 0 0; /* Espaciado interior */
-    font-size: 30px;
-    color: white;
-    position: absolute; /* Establece la posición relativa para el cursor */
+  overflow: hidden; /* Oculta el texto que se sale del contenedor */
+  left: 50%; /* Centra el texto horizontalmente */
+  transform: translateX(-50%);
+  padding: 0 0; /* Espaciado interior */
+  font-size: 30px;
+  color: white;
+  position: absolute; /* Establece la posición relativa para el cursor */
 }
 
 .texto-tecleado::after {
-    content: ''; /* Agrega el cursor */
-    position: relative; /* Establece la posición absoluta para el cursor */
-    top: 0; /* Alinea el cursor con la parte superior del contenedor */
-    right: 0; /* Alinea el cursor con el borde derecho del contenedor */
-    height: 100%; /* Establece la altura del cursor para que coincida con la altura del contenedor */
-    border-right: .15em solid orange; /* Crea el efecto de cursor */
-    animation: cursorAnim 10s forwards; /* Define la animación del cursor */
+  content: ""; /* Agrega el cursor */
+  position: relative; /* Establece la posición absoluta para el cursor */
+  top: 0; /* Alinea el cursor con la parte superior del contenedor */
+  right: 0; /* Alinea el cursor con el borde derecho del contenedor */
+  height: 100%; /* Establece la altura del cursor para que coincida con la altura del contenedor */
+  border-right: 0.15em solid orange; /* Crea el efecto de cursor */
+  animation: cursorAnim 10s forwards; /* Define la animación del cursor */
 }
 
 @keyframes cursorAnim {
-    from {
-        width: 2px; /* Inicia con un ancho de cero */
-    }
-    to {
-        width: 100%; /* Ancho final del cursor */
-    }
+  from {
+    width: 2px; /* Inicia con un ancho de cero */
+  }
+  to {
+    width: 100%; /* Ancho final del cursor */
+  }
 }
 
-
 #video-section {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 #background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alfa para controlar la opacidad */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Ajusta el valor alfa para controlar la opacidad */
 }
 
-.primera-seccion {
-    position: relative;
-    z-index: 2; /* Asegúrate de que el texto esté por encima del video */
+.titulo-seccion {
+  position: relative;
+  z-index: 2; /* Asegúrate de que el texto esté por encima del video */
+  margin-bottom: 50px;
 }
 
-.primera-seccion h1 {
-    position: relative;
-    z-index: 1;
+.titulo-seccion h1 {
+  position: relative;
+  z-index: 1;
 
-    color: white; 
-    text-align: center;
-    display: block;
-    margin-top: 220px;
-    margin-bottom: 50px;
-    font-size: 60px;
+  color: white;
+  text-align: center;
+  display: block;
+  margin-top: 220px;
+  margin-bottom: 50px;
+  font-size: 60px;
 }
 
 @media screen and (max-width: 1000px) {
-    .primera-seccion h1 {
-        font-size: 40px;
-    }
+  .titulo-seccion h1 {
+    font-size: 40px;
+  }
 
-    .texto-tecleado {
-        font-size: 20px;
-    }
+  .texto-tecleado {
+    font-size: 20px;
+  }
 }
 
+.primera-seccion {
+    height: 100vh;
+}
 
 /*----------------------------------------------------------------------- SECCIÓN 2: NUESTRO EQUIPO -----------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* TITULAR */
 .nuestro_equipo {
-    position: relative;
-    margin-top: 320px;
-    margin-bottom: 40px;
-    color: #333232;
-    background-color: white;
-    padding: 10px; /* Añadir un poco de espacio alrededor del texto */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añadir una sombra al texto */
-    background-image: linear-gradient(to right, #ffffff 0%, #f6f6f6 100%); /* Agregar un degradado en el fondo */
-    border-radius: 10px; /* Añadir bordes redondeados */
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #333232;
+  background-color: white;
+  padding: 10px; /* Añadir un poco de espacio alrededor del texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añadir una sombra al texto */
+  background-image: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #f6f6f6 100%
+  ); /* Agregar un degradado en el fondo */
+  border-radius: 10px; /* Añadir bordes redondeados */
 }
 
 .nuestro_equipo span {
-    font-size: 2em; 
-    letter-spacing: 20px;
-    color:#e0791f;
+  font-size: 2em;
+  letter-spacing: 20px;
+  color: #e0791f;
 }
-
 
 /* EMPLEADOS */
 .fila-empleados {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .dos-filas {
-    background-image: url(../imagenes/f4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../imagenes/f4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contenedor-empleado {
-    position: relative;
-    display: flex;
-    margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .empleado figure {
-    display: flex; /* Agregar display flex para centrar la imagen */
-    justify-content: center; /* Centrar la imagen horizontalmente */
+  display: flex; /* Agregar display flex para centrar la imagen */
+  justify-content: center; /* Centrar la imagen horizontalmente */
 }
 
 .empleado figure img {
-    position: relative;
-    width: 60%;
-    background-color: white;
-    border: 2px solid #de8c40;
-    box-sizing: border-box;
-    border-radius: 10px;
-    transition: transform 0.5s ease; /* Transición suave al pasar el ratón */
+  position: relative;
+  width: 60%;
+  background-color: white;
+  border: 2px solid #de8c40;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: transform 0.5s ease; /* Transición suave al pasar el ratón */
 }
 
 .texto_emp_der {
-    position: absolute;
-    display: none;
-    top: 0;
-    left: 100%; /* Posicionamos el texto a la derecha de la imagen */
-    width: 180%; /* Ancho del contenedor de texto */
-    padding: 7px;
-    background-color: rgba(255, 255, 255);
-    box-sizing: border-box;
-    border: 2px solid #de8c40;
-    border-radius: 10px;
-    opacity: 0; /* Inicialmente oculto */
-    transition: opacity 0.3s ease; /* Transición suave al mostrar/ocultar */
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 100%; /* Posicionamos el texto a la derecha de la imagen */
+  width: 180%; /* Ancho del contenedor de texto */
+  padding: 7px;
+  background-color: rgba(255, 255, 255);
+  box-sizing: border-box;
+  border: 2px solid #de8c40;
+  border-radius: 10px;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Transición suave al mostrar/ocultar */
 }
 
 .texto_emp_der.mostrar {
-    opacity: 1; /* Mostrar el texto si tiene la clase 'mostrar' */
-    display: block;
+  opacity: 1; /* Mostrar el texto si tiene la clase 'mostrar' */
+  display: block;
 }
 
 .texto_emp_izq {
-    position: absolute;
-    display: none;
-    top: 0;
-    right: 100%; /* Posicionamos el texto a la izquierda de la imagen */
-    width: 180%; /* Ancho del contenedor de texto */
-    padding: 7px;
-    background-color: rgba(255, 255, 255);
-    box-sizing: border-box;
-    border: 2px solid #de8c40;
-    border-radius: 10px;
-    opacity: 0; /* Inicialmente oculto */
-    transition: opacity 0.3s ease; /* Transición suave al mostrar/ocultar */
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 100%; /* Posicionamos el texto a la izquierda de la imagen */
+  width: 180%; /* Ancho del contenedor de texto */
+  padding: 7px;
+  background-color: rgba(255, 255, 255);
+  box-sizing: border-box;
+  border: 2px solid #de8c40;
+  border-radius: 10px;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Transición suave al mostrar/ocultar */
 }
 
 .texto_emp_izq.mostrar {
-    opacity: 1; /* Mostrar el texto si tiene la clase 'mostrar' */
-    display: block;
+  opacity: 1; /* Mostrar el texto si tiene la clase 'mostrar' */
+  display: block;
 }
-
 
 .empleado:hover .empleado-img {
-    transform: scale(1.1); /* Hacer la imagen un poco más grande al pasar el ratón */
-    cursor: pointer;
+  transform: scale(
+    1.1
+  ); /* Hacer la imagen un poco más grande al pasar el ratón */
+  cursor: pointer;
 }
-
-
 
 /* DETALLES TEXTO */
 .contenedor-empleado h1 {
-    color: orange;
+  color: orange;
 }
 
 #primer_dato {
-    padding-top: 25px;
-    padding-left: 20px;
-    padding-right: 15px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 15px;
 
-    text-align: left;
+  text-align: left;
 }
 
 .datos_contacto {
-    padding-left: 20px;
-    padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 15px;
 
-    text-align: left;
+  text-align: left;
 }
 
 .datos {
-    padding-top: 15px;
-    padding-left: 20px;
-    padding-right: 15px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 15px;
 
-    color: grey;
-    text-align: left;
+  color: grey;
+  text-align: left;
 }
-
-
-
 
 @media screen and (max-width: 1500px) {
-    .fila-empleados {
-        flex-wrap: wrap;
-        justify-content: center; /* Alinear los elementos a la izquierda */
-    }
-    
-    .contenedor-empleado {
-        margin: 0 10px 20px; /* Márgenes más pequeños */
-        flex-direction: column;
-        align-items: center;
-    }
+  .fila-empleados {
+    flex-wrap: wrap;
+    justify-content: center; /* Alinear los elementos a la izquierda */
+  }
 
-    .texto_emp_der,
-    .texto_emp_izq {
-        position: relative;
-        width: 100%;
-        right: 0;
-        left: 0;
-        align-items: center;
-        margin-top: 10px;
-    }
+  .contenedor-empleado {
+    margin: 0 10px 20px; /* Márgenes más pequeños */
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .nuestro_equipo {
-        font-size: 1.5em;
-    }
+  .texto_emp_der,
+  .texto_emp_izq {
+    position: relative;
+    width: 100%;
+    right: 0;
+    left: 0;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .nuestro_equipo {
+    font-size: 1.5em;
+  }
 }
 
-
 main {
-    background-image: none;
-    background-color: rgba(255, 210, 113, 0.244);
-    flex-grow: 1; /* Esto permite que el elemento se expanda y ocupe todo el espacio disponible */
-    display: flex;
-    flex-direction: column; 
+  background-image: none;
+  background-color: rgba(255, 210, 113, 0.244);
+  flex-grow: 1; /* Esto permite que el elemento se expanda y ocupe todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    z-index: 100;
+  z-index: 100;
 }
