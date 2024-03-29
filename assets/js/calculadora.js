@@ -14,15 +14,24 @@ function calcularPresupuesto() {
   const checkboxesServicios = document
     .getElementById('cbServicios')
     .querySelectorAll('input[type="checkbox"]');
+  let numServicios = 0;
   checkboxesServicios.forEach((checkbox) => {
     if (checkbox.checked) {
       presupuesto += precioServicio;
+      numServicios += 1;
     }
   });
-
+  if (numServicios < 1) {
+    alert('Seleccione al menos un servicio');
+    return;
+  }
   const ciudadSeleccionada = document
     .getElementsByName('txt_loc')[0]
     .value.trim();
+  if (ciudadSeleccionada === '') {
+    alert('Seleccione la ciudad más cercana a su ubicación');
+    return;
+  }
   if (ciudadSeleccionada.toLowerCase() !== ciudad.toLowerCase()) {
     presupuesto += presupuesto * incrementoDesplazamiento;
   }
@@ -42,12 +51,17 @@ function calcularPresupuesto() {
   );
   if (frecuenciaSeleccionada) {
     presupuesto += preciosFrecuencia[frecuenciaSeleccionada.value];
+  } else {
+    alert('Seleccione la frecuencia deseada de los servicios');
+    return;
   }
 
   alert(`Tu presupuesto será de: ${presupuesto.toFixed(2)}`);
 }
 
-document.getElementsByClassName('submit')[0].addEventListener('click', calcularPresupuesto);
+document
+  .getElementsByClassName('submit')[0]
+  .addEventListener('click', calcularPresupuesto);
 
 /**
  * getElementById() V
