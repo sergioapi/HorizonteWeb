@@ -47,7 +47,7 @@ function calcularPresupuesto() {
   alert(`Tu presupuesto será de: ${presupuesto.toFixed(2)}`);
 }
 
-document.getElementsByClassName('btnCalcular')[0].addEventListener('click', calcularPresupuesto);
+document.getElementsByClassName('submit')[0].addEventListener('click', calcularPresupuesto);
 
 /**
  * getElementById() V
