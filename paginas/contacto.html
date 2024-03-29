@@ -101,30 +101,38 @@
         </section>
       </section>
 
-      <h2>¿Qué necesitas?</h2>
+    
       <section class="seccion-dos">
     
-        <form class="formulario" name="Contacto" action="" method="post" enctype="multipart/form-data">
-          <div class="form-group">
-              <div style="display: flex;">
-                  <div style="flex: 1;">
-                      <label for="txName">Nombre</label>
-                      <input id="txName" type="text" name="nombre" placeholder="Escribe aquí tu nombre...">
-                  </div>
-                  <div style="flex: 1; margin-left: 10px;">
-                      <label for="txMail">Correo electrónico</label>
-                      <input id="txMail" type="text" name="correo" placeholder="Escribe aquí tu e-mail...">
-                  </div>
+        <h2 class="h2-que-necesitas">¿Qué necesitas?</h2>
+        <form class="formulario" name="Contacto" action="">
+
+
+          <div class="form-row">
+            <div class="form-mid-row">
+              <div class="form-group">
+                <label for="txName">Nombre</label>
+                <input id="txName" type="text" name="nombre" placeholder="Escribe aquí tu nombre...">
               </div>
+            </div>
+            <div class="form-mid-row">
+              <div class="form-group">
+                <label for="txMail">Correo electrónico</label>
+                <input id="txMail" type="text" name="correo" placeholder="Escribe aquí tu e-mail...">
+              </div>
+            </div>
           </div>
+
           <div class="form-group">
               <label for="taMsj">Mensaje</label>
               <textarea id="taMsj" name="mensaje" rows="4" placeholder="Escribe aquí tu mensaje..."></textarea>
           </div>
+
           <div class="form-group">
               <label for="fileInput">Adjuntar archivo</label>
               <input type="file" id="fileInput" name="arch1" size="50" value="Adjuntar archivo">
           </div>
+
           <div class="form-group">
               <input type="submit" name="env1" value="Enviar">
           </div>
