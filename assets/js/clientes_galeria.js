@@ -1,4 +1,5 @@
-$(document).ready(function() {
+/* eslint-disable linebreak-style */
+$(document).ready(() => {
   const galleryWrapper = $('.gallery-wrapper');
   const galleryImages = $('.gallery-image'); // Obtener todas las imágenes
   const imageWidth = galleryImages.eq(0).outerWidth(); // Obtener el ancho de una imagen
@@ -20,7 +21,7 @@ $(document).ready(function() {
     const newPosition = -currentIndex * totalImages * imageWidth;
 
     // Animar el desplazamiento
-    galleryWrapper.animate({ left: newPosition }, 1000, 'linear', function() {
+    galleryWrapper.animate({ left: newPosition }, 1000, 'linear', () => {
       // Si se alcanza el final del conjunto clonado, restablecer el índice y la posición
       if (currentIndex === totalImages) {
         currentIndex = 0;

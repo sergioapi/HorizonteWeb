@@ -1,0 +1,13 @@
+{
+    "direccion": {
+      "calle": "Rúa do Hórreo",
+      "ciudad": "17003 - A Coruña"
+    },
+    "emails": ["infor@he.com", "hempresarial@gmail.com"],
+    "horario": {
+      "Lunes-Jueves": "8 a 16 h",
+      "Viernes": "8 a 14 h"
+    },
+    "telefonos": ["981 562 408", "620 315 709"]
+  }
+  
