@@ -1,0 +1,172 @@
+.noticiario {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.noticiario ul {
+  display: flex; /* flex container */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(255, 224, 138);
+  border-radius: 2px solid #de8c40;
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+
+}
+
+.noticiario li {
+  border: 2px solid chocolate;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega un sombreado al borde */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #fff;
+
+  flex: 0 0 calc(25% - 20px);
+
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.noticiario a {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  font-size: 110%;
+
+  color: black;
+  text-decoration: none;
+}
+
+.noticiario a:hover {
+  color: darkgray;
+  text-decoration: solid;
+}
+
+.imagen-cabecera {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.imagen-cabecera figure {
+  margin: 0;
+}
+
+.imagen-cabecera img {
+  width: 100%;
+  height: auto; /* Para mantener la proporción original de la imagen */
+  display: block; /* Elimina el espacio adicional por ser un elemento en línea */
+}
+
+.titulo-formulario {
+  font-family: fantasy;
+  font-style: normal;
+  color: #622c0c;
+  font-size: 220%;
+
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  border-color: #622c0c;
+  background-color: rgb(255, 224, 138);
+  padding: 40px;
+  color: #622c0c;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.form-mid-row {
+  display: flex;
+  width: 50%;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+input[type="text"],
+select,
+input[type="date"] {
+  width: 100%;
+  padding: 15px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+/* Media query para reorganizar los elementos cuando el ancho de la pantalla sea menor */
+@media (max-width: 900px) {
+  .form-mid-row {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.submit {
+  background-color: #de8c40;
+  color: #fff;
+  font-size: 20px;
+
+  padding: 10px 70px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+
+  /* Añadir efectos de transición */
+  transition: background-color 0.3s ease;
+}
+
+/* Cambiar color de fondo al pasar el ratón sobre el botón */
+.submit:hover {
+  background-color: #622c0c;
+}
+
+main {
+  background-image: url(../imagenes/f5.png);
+  background-color: #fff4dc;
+}
+
+h3 {
+  font-size: 2em;
+  margin-top: 80px;
+  color: #622c0c;
+  margin-bottom: 40px;
+  border: 4px solid rgb(255, 224, 138);
+  border-radius: 10px;
+  background-color: white;
+}
+
+header {
+  z-index: 100;
+}
+
+body {
+  background-color: #fff4dc;
+}
+
+@media screen and (max-width: 880px) {
+  main {
+    background-image: none;
+  }
+}

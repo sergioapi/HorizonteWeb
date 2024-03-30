@@ -1,0 +1,189 @@
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 85px;
+  padding-bottom: 85px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../imagenes/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  -webkit-text-stroke: 1px black; /* Grosor y color del borde */
+  -webkit-text-fill-color: white; /* Relleno del texto */
+  font-size: 3em;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el contenedor principal */
+section {
+  display: flex;
+  text-align: center;
+}
+
+#mapa {
+  width: 50%; /* El mapa ocupa la mitad del contenedor */
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  background-color: rgb(255, 224, 138);
+}
+
+iframe {
+  width: 80%;
+}
+
+#datos {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  text-align: center;
+  width: 50%;
+}
+
+.contenedor {
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+
+  column-count: 2;
+  text-align: center;
+  padding: 10%;
+}
+
+/* Estilos para los elementos de la lista */
+.contenedor li {
+  padding: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* Estilos para pantallas más pequeñas */
+  section {
+    flex-direction: column; /* Cambiar a diseño de columna en pantallas más pequeñas */
+    align-items: center; /* Centrar los elementos horizontalmente */
+  }
+
+  #mapa {
+    margin-bottom: 20px; /* Espacio entre el mapa y la lista en pantallas pequeñas */
+    margin-left: 0;
+    width: 100%;
+  }
+
+  iframe {
+    width: 80%;
+    height: 80%;
+  }
+
+  .contenedor {
+    width: auto; /* Cambiar el ancho a automático para adaptarse al contenido */
+    padding: 0;
+  }
+
+  .contenedor li {
+    margin-top: 0; /* Eliminar margen superior en pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor {
+    column-count: 1;
+  }
+}
+
+/* Cambiar el filtro al pasar el ratón sobre las imágenes */
+.icono:hover img {
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------- Estilos para el formulario --------------------------------------------------*/
+.seccion-dos {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url(../imagenes/fondo-contacto4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h2-que-necesitas {
+  color: #fff;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  border-color: #622c0c;
+  background-color: rgb(255, 224, 138);
+  border: 2px solid rgb(255, 224, 138);
+  border-radius: 10px;
+  padding: 40px;
+  color: #622c0c;
+  margin-bottom: 50px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.form-mid-row {
+  display: flex;
+  width: 50%;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 20px;
+  margin: 8px 0;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #de8c40;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 70px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #622c0c;
+}
+
+/* Media query para reorganizar los elementos cuando el ancho de la pantalla sea menor */
+@media (max-width: 900px) {
+  .form-mid-row {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

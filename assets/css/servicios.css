@@ -1,0 +1,210 @@
+.grid-container {
+  background-image: url(../imagenes/fondo-calculadora.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin-left: 0;
+  margin-right: 0;
+
+  display: grid;
+  justify-items: center; /* Centrar horizontalmente */
+  align-items: center;
+  justify-items: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  gap: 0px;
+}
+
+h1 {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+#adelante {
+  text-align: center;
+}
+
+button {
+  background-color: #de8c40;
+  color: #fff;
+  font-size: 20px;
+
+  padding: 10px 70px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+  /* Añadir efectos de transición */
+  transition: background-color 0.3s ease;
+}
+
+#calculadora {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+
+  border: 2px solid #622c0c;
+  border-radius: 10px;
+  background-color: rgb(255, 224, 138);
+  padding: 40px;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: fantasy;
+  font-style: normal;
+  color: #622c0c;
+  font-size: 220%;
+
+  grid-column: span 2;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+  text-align: left; /* Alinear el texto a la izquierda */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  padding: 10px;
+}
+
+legend {
+  text-align: center; /* Centrar el texto del legend */
+  margin-bottom: 20px; /* Añadir espacio debajo del legend */
+  margin-top: 10px;
+  font-size: 18px; /* Tamaño de fuente */
+  font-weight: bold; /* Hacer el texto en negrita */
+  color: #333; /* Color del texto */
+  padding: 5px 10px; /* Añadir espacio interno al legend */
+  border: 2px solid #ccc; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #eee3e3;
+}
+
+input[type="checkbox"] {
+  margin-left: 90px; /* Añadir espacio entre los checkboxes y el texto */
+  width: 16px; /* Ancho personalizado */
+  height: 16px; /* Altura personalizada */
+  border: 2px solid #ccc; /* Borde */
+  border-radius: 3px; /* Bordes redondeados */
+  background-color: #fff; /* Color de fondo */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el checkbox */
+}
+
+input[type="radio"] {
+  margin-left: 90px; /* Añadir espacio entre los checkboxes y el texto */
+  width: 16px; /* Ancho personalizado */
+  height: 16px; /* Altura personalizada */
+  border: 2px solid #ccc; /* Borde */
+  border-radius: 3px; /* Bordes redondeados */
+  background-color: #fff; /* Color de fondo */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el checkbox */
+}
+
+input[type="text"] {
+  width: 100%; /* Ajustar el ancho del select al contenedor */
+  padding: 10px; /* Añadir espacio interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 2px solid #ccc; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #fff; /* Color de fondo */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el select */
+  margin-top: 10px;
+}
+
+select {
+  width: 100%; /* Ajustar el ancho del select al contenedor */
+  padding: 10px; /* Añadir espacio interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 2px solid #ccc; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #fff; /* Color de fondo */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el select */
+}
+
+.item1,
+.item2 {
+  grid-row: 1; /* Ambos en la primera fila */
+}
+
+.item3,
+.item4 {
+  grid-row: 2; /* Ambos en la segunda fila */
+}
+
+.item1,
+.item3 {
+  grid-column: 1; /* Item1 y Item3 en la primera columna */
+}
+
+.item2,
+.item4 {
+  grid-column: 2; /* Item2 y Item4 en la segunda columna */
+}
+
+.submit {
+  grid-column: 1 / -1; /* Ocupa todas las columnas */
+
+  background-color: #de8c40;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+
+  padding: 10px 70px;
+  border: 2px solid #622c0c;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+
+  /* Añadir efectos de transición */
+  transition: background-color 0.3s ease;
+}
+
+/* Cambiar color de fondo al pasar el ratón sobre el botón */
+.submit:hover {
+  background-color: #622c0c;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  #calculadora {
+    grid-template-columns: 1fr;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    grid-column: 1;
+  }
+
+  .item1 {
+    grid-row: 1;
+  }
+
+  .item2 {
+    grid-row: 2;
+  }
+
+  .item3 {
+    grid-row: 3;
+  }
+
+  .item4 {
+    grid-row: 4;
+  }
+}

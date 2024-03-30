@@ -61,6 +61,12 @@
   margin-bottom: 50px;
 }
 
+@media screen and (min-height: 1000px) {
+  .titulo-seccion {
+    margin-top: 20%;
+  }
+}
+
 .titulo-seccion h1 {
   position: relative;
   z-index: 1;
@@ -84,7 +90,7 @@
 }
 
 .primera-seccion {
-    height: 100vh;
+  height: 100vh;
 }
 
 /*----------------------------------------------------------------------- SECCIÓN 2: NUESTRO EQUIPO -----------------------------------------------------------------*/

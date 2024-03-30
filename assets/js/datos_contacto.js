@@ -25,17 +25,17 @@ fetch(rutaJson)
 
 function actualizarPagina(data) {
   // Actualiza la dirección
-  document.getElementById('direccion').querySelector('.valor').innerHTML = `${data.direccion.calle}<br>${data.direccion.ciudad}`;
+  document.getElementById('direccion').querySelector('.valor').innerHTML = `${data.direccion.calle}<br />${data.direccion.ciudad}`;
 
   // Actualiza el horario
   document
     .getElementById('horario')
     .querySelector(
       '.valor',
-    ).textContent = `Lunes - Jueves: ${data.horario['Lunes-Jueves']}\nViernes: ${data.horario.Viernes}`;
+    ).innerHTML = `Lunes - Jueves: ${data.horario['Lunes-Jueves']}<br />Viernes: ${data.horario.Viernes}`;
 
   // Actualiza los emails
-  document.getElementById('mail').querySelector('.valor').textContent = data.emails.join('\n');
+  document.getElementById('mail').querySelector('.valor').innerHTML = data.emails.join('<br />');
 
   const tlfs = [];
   data.telefonos.forEach((telefono) => {
@@ -47,7 +47,7 @@ function actualizarPagina(data) {
   });
 
   // Actualiza los teléfonos utilizando la etiqueta <br>
-  document.getElementById('tlf').querySelector('.valor').innerHTML = tlfs.join('<br>');
+  document.getElementById('tlf').querySelector('.valor').innerHTML = tlfs.join('<br />');
 }
 
 // Obtener todas las imágenes de icono

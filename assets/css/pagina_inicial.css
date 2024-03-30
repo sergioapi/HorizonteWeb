@@ -8,11 +8,6 @@ main {
   text-align: center;
 }
 
-#video-section {
-  position: relative;
-  overflow: hidden;
-}
-
 #background-video {
   position: absolute;
   top: 0;
@@ -128,7 +123,7 @@ ul.servicios-lista li a:hover {
 }
 
 @media screen and (min-width: 1800px) {
-    .content{
-        margin-top: 10%;
-    }
+  .content {
+    margin-top: 10%;
+  }
 }
