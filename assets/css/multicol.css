@@ -1,45 +1,62 @@
 h1 {
     margin-top: 0;
+    margin-bottom: 0;
     padding-top: 85px;
     padding-bottom: 85px;
 
-    background-image: url(../imagenes/fondo-contacto2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imagenes/2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    -webkit-text-stroke: 1px black; /* Grosor y color del borde */
+    -webkit-text-fill-color: white; /* Relleno del texto */
+    font-size: 3em;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Estilos para el contenedor principal */
 section {
     display: flex;
-    flex-direction: row; /* Alinear los elementos en fila */
-    justify-content: space-between; /* Espaciado entre los elementos */
-    align-items: flex-start; /* Alinear los elementos en la parte superior */
-    margin-top: 30px;
-    margin-bottom: 30px; /* Agregar margen inferior para separación */
+    text-align: center;
 }
+
 
 #mapa {
-    width: 40%; /* El mapa ocupa la mitad del contenedor */
-    margin-left: 120px;
+    width: 50%; /* El mapa ocupa la mitad del contenedor */
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    background-color: rgb(255, 224, 138);
 }
+
+iframe {
+    width: 80%;
+}
+
+#datos {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    text-align: center;
+    width: 50%;
+}
+
 
 .contenedor {
-    width: 45%; /* La lista ocupa el 45% del contenedor */
+    width: 100%;
     list-style-type: none;
     text-align: center;
-}
 
-ul {
-    column-count: 1;
+    column-count: 2;
     text-align: center;
+    padding: 10%;
 }
 
 /* Estilos para los elementos de la lista */
 .contenedor li {
-    margin-top: 20px; /* Agregar espacio superior entre los elementos */
+    padding: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     /* Estilos para pantallas más pequeñas */
     section {
         flex-direction: column; /* Cambiar a diseño de columna en pantallas más pequeñas */
@@ -49,19 +66,34 @@ ul {
     #mapa {
         margin-bottom: 20px; /* Espacio entre el mapa y la lista en pantallas pequeñas */
         margin-left: 0;
+        width: 100%;
     }
 
-    ul {
-        column-count: 2;
+    iframe {
+        width: 80%;
+        height: 80%;
     }
 
     .contenedor {
         width: auto; /* Cambiar el ancho a automático para adaptarse al contenido */
+        padding: 0;
     }
 
     .contenedor li {
         margin-top: 0; /* Eliminar margen superior en pantallas más pequeñas */
     }
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor {
+        column-count: 1;
+    }
+}
+
+
+/* Cambiar el filtro al pasar el ratón sobre las imágenes */
+.icono:hover img {
+    cursor: pointer;
 }
 
 
@@ -70,7 +102,6 @@ ul {
 /* -------------------------------------------------------- Estilos para el formulario --------------------------------------------------*/
 .seccion-dos {
     margin-bottom: 0;
-    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
